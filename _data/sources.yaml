@@ -32,6 +32,8 @@
       link: https://ieeexplore.ieee.org/abstract/document/10887329
     - type: website
       link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DqXsbPAAAAAJ&sortby=pubdate&citation_for_view=DqXsbPAAAAAJ:ymM8A-49E98C
-
+  tags:
+    - open science
+  repo: greenelab/meta-review
   
 
