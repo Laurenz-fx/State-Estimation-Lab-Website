@@ -26,11 +26,12 @@
   type: paper
   description: Existing navigation systems mostly consider “success” when the robot reaches within 1 m radius to a goal. This precision is insufficient for emerging applications where a robot needs to be positioned precisely relative to an object for downstream tasks, such as docking, inspection, and manipulation. To this end, we design and implement Aim-My-Robot (AMR), a local navigation system that enables a robot to reach any object in its vicinity at the desired relative pose, with centimeter-level accuracy. AMR achieves high accuracy and robustness by leveraging multi-modal sensors, precise action prediction, and is trained on large-scale photorealistic data generated in simulation. AMR shows strong sim2real transfer and can adapt to different robot kinematics and unseen objects with little to no fine-tuning. Website: https://sites.google.com/view/aimmyrobot
   date: 2025-2-14
+  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
   buttons:
     - type: source
       link: https://ieeexplore.ieee.org/abstract/document/10887329
     - type: website
       link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DqXsbPAAAAAJ&sortby=pubdate&citation_for_view=DqXsbPAAAAAJ:ymM8A-49E98C
-      
+
   
 
