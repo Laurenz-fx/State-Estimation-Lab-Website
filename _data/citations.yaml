@@ -245,7 +245,3 @@
   image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
   plugin: sources.py
   file: sources.yaml
-- url: https://scholar.google.com/citations?view_op=view_citation&hl=de&user=DqXsbPAAAAAJ&sortby=pubdate&citation_for_view=DqXsbPAAAAAJ:ymM8A-49E98C
-  image: https://research.nvidia.com/sites/default/files/styles/wide/public/publications/Marco_framework_0.png?itok=9aJ49-_U
-  plugin: sources.py
-  file: sources.yaml
