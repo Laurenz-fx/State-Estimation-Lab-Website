@@ -1,6 +1,6 @@
 ---
 name: Markus Grotz
-image: images/photo.jpg
+image: images/team/markus.jpg
 role: Postdoc
 description: Visual Perception for Grasping and Manipulation
 links:
