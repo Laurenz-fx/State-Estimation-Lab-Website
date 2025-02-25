@@ -1,10 +1,11 @@
 ---
 name: Dieter Fox
 image: images/team/dieter-fox.jpg
-role: Principal Investigator
-description: Head of the UW Robotics and State Estimation Lab
+role: Faculty
+description: Faculty
 links:
-    homepage: https://homes.cs.washington.edu/~fox/
+    home-page: https://homes.cs.washington.edu/~fox/
+    scholar: https://scholar.google.com/citations?user=DqXsbPAAAAAJ&hl=de
 ---
 
 Dieter Fox is the Senior Director of Robotics Research at Nvidia and a Professor at the University of Washington’s Paul G. Allen School of Computer Science & Engineering. His work focuses on robotics, artificial intelligence, computer vision, and machine learning. At UW, he leads the Robotics and State Estimation Lab and has contributed significantly to the field, including co-authoring the textbook *Probabilistic Robotics*.  
