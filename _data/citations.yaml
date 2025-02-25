@@ -261,3 +261,24 @@
   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
   plugin: sources.py
   file: sources.yaml
+- id: https://doi.org/10.48550/arXiv.2502.05485
+  title: 'HAMSTER: Hierarchical Action Models For Open-World Robot Manipulation'
+  authors:
+  - Yi Li
+  - Yuquan Deng
+  - Jesse Zhang
+  - Joel Jang
+  - Marius Memmel
+  - Raymond Yu
+  - Caelan Reed Garrett
+  - Fabio Ramos
+  - Dieter Fox
+  - Anqi Li
+  - Abhishek Gupta
+  - Ankit Goyal
+  publisher: arXiv
+  date: '2025-02-14'
+  link: http://arxiv.org/abs/2502.05485
+  image: https://hamster-robot.github.io/figs/hamster_training_fig.png
+  plugin: sources.py
+  file: sources.yaml
