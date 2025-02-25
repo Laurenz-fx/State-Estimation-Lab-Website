@@ -277,8 +277,24 @@
   - Abhishek Gupta
   - Ankit Goyal
   publisher: arXiv
-  date: '2025-01-01'
+  date: '2025-02-14'
   link: https://doi.org/g86b5v
+  type: paper
+  description: "The paper addresses the challenge of generalization in robotics due\
+    \ to the lack of training data. It proposes a hierarchical vision-language-action\
+    \ (VLA) model that improves the use of off-domain data (e.g., videos, sketches,\
+    \ simulations). Instead of directly predicting actions, the model first generates\
+    \ a coarse 2D path for the robot\u2019s end-effector based on an image and task\
+    \ description. This path then guides a lower-level 3D control policy for precise\
+    \ execution. This approach reduces the burden on both levels of the model and\
+    \ improves generalization across different domains. Real-world experiments show\
+    \ a 20% improvement in success rates compared to OpenVLA, representing a 50% relative\
+    \ gain."
   image: https://hamster-robot.github.io/figs/hamster_training_fig.png
+  buttons:
+  - type: website
+    link: https://hamster-robot.github.io/
+  tags:
+  - robotics
   plugin: sources.py
   file: sources.yaml
