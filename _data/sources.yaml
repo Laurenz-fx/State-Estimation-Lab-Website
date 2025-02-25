@@ -26,4 +26,13 @@
   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
 
 - id: doi:10.48550/arXiv.2502.05485
+  type: paper
+  description: The paper addresses the challenge of generalization in robotics due to the lack of training data. It proposes a hierarchical vision-language-action (VLA) model that improves the use of off-domain data (e.g., videos, sketches, simulations). Instead of directly predicting actions, the model first generates a coarse 2D path for the robot’s end-effector based on an image and task description. This path then guides a lower-level 3D control policy for precise execution. This approach reduces the burden on both levels of the model and improves generalization across different domains. Real-world experiments show a 20% improvement in success rates compared to OpenVLA, representing a 50% relative gain.
+  date: 2025-2-14
   image: https://hamster-robot.github.io/figs/hamster_training_fig.png
+  buttons:
+    - type: website
+      link: https://hamster-robot.github.io/
+  tags:
+   - robotics
+
