@@ -21,18 +21,19 @@
       {% endif %}
     </a>
   </div>
+
   {% if type == "twitter" %}
-  <a href="{{ link }}" target="_blank">
-    <img src="{{ "/assets/icons/twitter.svg" | relative_url }}" alt="Twitter" width="20">
-  </a>
-{% elsif type == "scholar" %}
-  <a href="{{ link }}" target="_blank">
-    <img src="{{ "/assets/icons/scholar.svg" | relative_url }}" alt="Google Scholar" width="20">
-  </a>
-{% elsif type == "home-page" %}
-  <a href="{{ link }}" target="_blank">
-    <img src="{{ "/assets/icons/homepage.svg" | relative_url }}" alt="Homepage" width="20">
-  </a>
+    <a href="{{ link }}" target="_blank">
+      <img src="{{ "/images/icons/twitter.svg" | relative_url }}" alt="Twitter" width="20">
+    </a>
+  {% elsif type == "scholar" %}
+    <a href="{{ link }}" target="_blank">
+      <img src="{{ "/images/icons/scholar.svg" | relative_url }}" alt="Google Scholar" width="20">
+    </a>
+  {% elsif type == "home-page" %}
+    <a href="{{ link }}" target="_blank">
+      <img src="{{ "/images/icons/homepage.svg" | relative_url }}" alt="Homepage" width="20">
+    </a>
+  {% endif %}
 {% endif %}
 
-{% endif %}
