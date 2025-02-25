@@ -2,7 +2,7 @@
 name: Xiangyun Meng
 image: images/team/xiangyun-meng.jpg
 role: PhD Student
-description: Robotics, computer vision
+description: PhD Student
 links:
   home-page: https://homes.cs.washington.edu/~xiangyun/
 

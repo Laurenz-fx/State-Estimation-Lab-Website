@@ -2,7 +2,7 @@
 name: Helen Wang
 image: images/team/helen-wang.jpg
 role: PhD Student
-description: Robotics, Computer Vision, Representation Learning
+description: PhD Student
 links:
   home-page: https://helen9975.github.io/
 

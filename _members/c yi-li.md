@@ -2,7 +2,7 @@
 name: Yi Li
 image: images/team/yi-li.jpg
 role: PhD Student
-description: Computer Vision, Deep Learning, Robotics
+description: PhD Student
 links:
   home-page: https://yili.vision/
 

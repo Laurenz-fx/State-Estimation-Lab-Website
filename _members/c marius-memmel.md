@@ -2,7 +2,7 @@
 name: Marius Memmel
 image: images/team/marius-memmel.jpg
 role: PhD Student
-description: Robot Learning, Representation Learning, Computer Vision
+description: PhD Student
 links:
   home-page: https://memmelma.github.io/
 
