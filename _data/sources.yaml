@@ -33,6 +33,6 @@
   buttons:
     - type: website
       link: https://hamster-robot.github.io/
-  tags:
-   - robotics
+  # tags:
+  #  - robotics
 
