@@ -294,7 +294,5 @@
   buttons:
   - type: website
     link: https://hamster-robot.github.io/
-  tags:
-  - robotics
   plugin: sources.py
   file: sources.yaml
