@@ -42,7 +42,7 @@
       </span>
     {% endif %}
 
-    {% if member.description or type %}
+    {% if member.research or type %}
       <span class="portrait-research">
         {{ member.research | default: type.research }}
       </span>
