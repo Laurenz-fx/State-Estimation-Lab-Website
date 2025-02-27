@@ -1,6 +1,6 @@
 ---
 layout: default
----
+--- 
 
 {% capture floatcontent %}
 
@@ -11,6 +11,28 @@ layout: default
     {% assign key = link[0] %}
     {% assign value = link[1] %}
     {% include button.html type=key link=value style="bare" %}<br>
+  {% endfor %}
+</div>
+
+<!-- Icons für Twitter, Google Scholar und Homepage -->
+<div class="member-links">
+  {% for link in page.links %}
+    {% assign key = link[0] %}
+    {% assign value = link[1] %}
+    
+    {% if key == "twitter" %}
+      <a href="{{ value }}" target="_blank">
+        <img src="{{ "/lab-website-template/images/icons/twitter.svg" | relative_url }}" alt="Twitter" width="20">
+      </a>
+    {% elsif key == "scholar" %}
+      <a href="{{ value }}" target="_blank">
+        <img src="{{ "/lab-website-template/images/icons/scholar.svg" | relative_url }}" alt="Google Scholar" width="20">
+      </a>
+    {% elsif key == "home-page" %}
+      <a href="{{ value }}" target="_blank">
+        <img src="{{ "/lab-website-template/images/icons/home-page.svg" | relative_url }}" alt="Homepage" width="20">
+      </a>
+    {% endif %}
   {% endfor %}
 </div>
 
