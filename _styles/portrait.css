@@ -68,8 +68,8 @@
   font-weight: var(--semi-bold);
 }
 
-.portrait[data-style=tiny] .portrait-description,
-.portrait[data-style=tiny] .portrait-affiliation .portrait-research {
+.portrait[data-style=tiny] .portrait-role,
+.portrait[data-style=tiny] .portrait-research {
   display: none;
 }
 
