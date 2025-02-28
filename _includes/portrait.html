@@ -42,10 +42,14 @@
   </span>
 {% endif %}
 
-{% if member.research or type.research %}
-  <span class="portrait-research">
-    {{ member.research | default: type.research }}
-  </span>
+{% if member.research %}
+<span class="portrait-research">
+  {{ member.research }}
+</span>
+{% elsif type.research %}
+<span class="portrait-research">
+  {{ type.research }}
+</span>
 {% endif %}
   </a>
 </div>
