@@ -36,6 +36,8 @@
       </span>
     {% endif %}
     
+    {{ member.role }}
+
     {% if member.role or type %}
       <span class="portrait-role">
         {{ member.role | default: type.research }}
