@@ -69,7 +69,7 @@
 }
 
 .portrait[data-style=tiny] .portrait-description,
-.portrait[data-style=tiny] .portrait-affiliation {
+.portrait[data-style=tiny] .portrait-affiliation .portrait-research {
   display: none;
 }
 
