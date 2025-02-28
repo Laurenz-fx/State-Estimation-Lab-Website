@@ -36,24 +36,16 @@
       </span>
     {% endif %}
     
-    {{ member.role }}
+    {% if member.role or type.research %}
+  <span class="portrait-role">
+    {{ member.role | default: type.research }}
+  </span>
+{% endif %}
 
-    {% if member.role or type %}
-      <span class="portrait-role">
-        {{ member.role | default: type.research }}
-      </span>
-    {% endif %}
-
-    {% if member.research or type %}
-      <span class="portrait-research">
-        {{ member.research | default: type.research }}
-      </span>
-    {% endif %}
-
-    {% if member.affiliation %}
-      <span class="portrait-affiliation">
-        {{ member.affiliation }}
-      </span>
-    {% endif %}
+{% if member.research or type.research %}
+  <span class="portrait-research">
+    {{ member.research | default: type.research }}
+  </span>
+{% endif %}
   </a>
 </div>
