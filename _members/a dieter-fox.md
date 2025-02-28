@@ -2,8 +2,7 @@
 name: Dieter Fox
 image: images/team/dieter-fox.jpg
 role: Faculty
-description: Faculty
-research: Dieters Research
+description: Dieters research
 links:
     home-page: https://homes.cs.washington.edu/~fox/
     google-scholar: DqXsbPAAAAAJ&hl
