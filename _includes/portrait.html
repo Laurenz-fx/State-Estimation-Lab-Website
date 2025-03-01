@@ -35,16 +35,12 @@
         {{ member.name }}
       </span>
     {% endif %}
-    
-    <span>Debug Role: {{ member.role }}</span>
 
     {% if member.role or type.research %}
       <span class="portrait-role">
         {{ member.role | default: type.research }}
       </span>
     {% endif %}
-
-    <span>Debug Research: {{ member.research }}</span>
 
     {% if member.research %}
       <span class="portrait-research">
@@ -59,8 +55,6 @@
         Keine Forschung gefunden.
       </span>
     {% endif %}
-
-    <span>Debug Type Research: {{ type.research }}</span>
 
   </a>
 </div>
