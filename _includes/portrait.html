@@ -37,19 +37,19 @@
     {% endif %}
     
     {% if member.role or type.research %}
-  <span class="portrait-role">
-    {{ member.role | default: type.research }}
-  </span>
-{% endif %}
+      <span class="portrait-role">
+        {{ member.role | default: type.research }}
+      </span>
+    {% endif %}
 
-{% if member.research %}
-<span class="portrait-research">
-  {{ member.research }}
-</span>
-{% elsif type.research %}
-<span class="portrait-research">
-  {{ type.research }}
-</span>
-{% endif %}
+    {% if member.research %}
+      <span class="portrait-research">
+        {{ member.research }}
+      </span>
+    {% elsif type.research %}
+      <span class="portrait-research">
+        {{ type.research }}
+      </span>
+    {% endif %}
   </a>
 </div>
