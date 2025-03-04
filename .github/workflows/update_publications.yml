@@ -1,28 +1,41 @@
-name: Update Publications
+import scholarly
+import yaml
+import os
 
-on:
-  schedule:
-    - cron: '0 0 * * *'  # Jeden Tag um Mitternacht
-  workflow_dispatch:  # Damit du den Workflow auch manuell ausführen kannst
+# Liste der Lab-Mitglieder
+lab_members = ['Dieter Fox', 'Markus Grotz', 'Yi Li', 'Marius Memmel', 'Helen Wang', 'Jiafei Duan', 'Joel Jang', 'Ge Yan']
 
-jobs:
-  update-publications:
-    runs-on: ubuntu-latest
+# Funktion, die Autoren eines Papers extrahiert
+def get_authors_from_paper(paper):
+    return paper.get('authors', [])
 
-    steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
+# Lade Papers von Google Scholar
+def fetch_papers_from_google_scholar():
+    # Beispiel-Code, um Papers zu holen
+    return scholarly.search_pubs('Dieter Fox')
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+# Verarbeite die Papers
+papers = fetch_papers_from_google_scholar()
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install scholarly pyyaml
+# Erstelle eine Liste von relevanten Publikationen
+relevant_papers = []
 
-    - name: Run script to update publications
-      run: |
-        python scripts/update_publications.py
+# Überprüfe, ob mindestens ein Lab-Mitglied als Autor dabei ist
+for paper in papers:
+    authors = get_authors_from_paper(paper)
+    if any(member in authors for member in lab_members):
+        print(f"Paper {paper['title']} enthält ein Lab-Mitglied.")
+        # Erstelle das Paper-Objekt für die Website
+        relevant_papers.append({
+            'id': paper.get('doi', 'No DOI'),
+            'title': paper['title'],
+            'authors': authors,
+            'link': paper.get('url', 'No URL'),
+            'date': paper.get('date', 'No Date'),
+        })
+    else:
+        print(f"Paper {paper['title']} enthält keine Lab-Mitglieder.")
+
+# Speichern der relevanten Paper in einer YAML-Datei (oder einer anderen Struktur)
+with open('_data/publications.yml', 'w') as file:
+    yaml.dump(relevant_papers, file)
