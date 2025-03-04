@@ -43,4 +43,4 @@ for paper in papers:
 
 # Speichern der relevanten Paper in einer YAML-Datei
 with open('_data/publications.yml', 'w') as file:
-    yaml.dump({'publications': relevant_papers}, file)
+    yaml.dump(relevant_papers, file)
