@@ -1,33 +1,46 @@
-name: Update Publications
+import scholarly
+import yaml
+import os
 
-on:
-  schedule:
-    - cron: '0 0 * * 1'
-  workflow_dispatch:
+# Liste der Lab-Mitglieder
+lab_members = ['Dieter Fox', 'Markus Grotz', 'Yi Li', 'Marius Memmel', 'Helen Wang', 'Jiafei Duan', 'Joel Jang', 'Ge Yan']
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
+# Funktion, die Autoren eines Papers extrahiert
+def get_authors_from_paper(paper):
+    return paper.get('authors', [])
 
-    steps:
-      - name: Repository auschecken
-        uses: actions/checkout@v3
+# Lade Papers von Google Scholar
+def fetch_papers_from_google_scholar():
+    return scholarly.search_pubs('Dieter Fox')
 
-      - name: Python installieren
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+# Verarbeite die Papers
+papers = fetch_papers_from_google_scholar()
 
-      - name: Abhängigkeiten installieren
-        run: pip install scholarly pyyaml
+# Erstelle eine Liste von relevanten Publikationen
+relevant_papers = []
 
-      - name: Skript ausführen
-        run: python scripts/update_publications.py
+# Überprüfe, ob mindestens ein Lab-Mitglied als Autor dabei ist
+for paper in papers:
+    authors = get_authors_from_paper(paper)
+    if any(member in authors for member in lab_members):
+        print(f"Paper {paper['title']} enthält ein Lab-Mitglied.")
+        # Erstelle das Paper-Objekt für die Website
+        relevant_papers.append({
+            'id': paper.get('doi', 'No DOI'),
+            'title': paper['title'],
+            'authors': authors,
+            'link': paper.get('url', 'No URL'),
+            'date': paper.get('date', 'No Date'),
+            'image': paper.get('image', 'No Image'),
+            'buttons': [
+                {'type': 'website', 'link': paper.get('url', 'No URL')}
+            ],
+            'tags': paper.get('tags', []),
+            'repo': paper.get('repo', 'No Repo')
+        })
+    else:
+        print(f"Paper {paper['title']} enthält keine Lab-Mitglieder.")
 
-      - name: Änderungen committen und pushen
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add publications.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update Publications"
-          git push
+# Speichern der relevanten Paper in einer YAML-Datei
+with open('_data/publications.yml', 'w') as file:
+    yaml.dump({'publications': relevant_papers}, file)
