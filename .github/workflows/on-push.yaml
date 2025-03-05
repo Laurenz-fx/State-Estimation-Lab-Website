@@ -1,6 +1,9 @@
 name: on-push
 run-name: on push to main
 
+env:
+  GOOGLE_SCHOLAR_API_KEY: ${{ secrets.GOOGLE_SCHOLAR_API_KEY }}
+
 on:
   push:
     branches:
