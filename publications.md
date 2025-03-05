@@ -1,4 +1,0 @@
-# Publications
-
-- **[Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.](https://doi.org/10.1371/journal.pcbi.1007128)** (2020-12-4)
-- **[The paper addresses the challenge of generalization in robotics due to the lack of training data. It proposes a hierarchical vision-language-action (VLA) model that improves the use of off-domain data (e.g., videos, sketches, simulations). Instead of directly predicting actions, the model first generates a coarse 2D path for the robot’s end-effector based on an image and task description. This path then guides a lower-level 3D control policy for precise execution. This approach reduces the burden on both levels of the model and improves generalization across different domains. Real-world experiments show a 20% improvement in success rates compared to OpenVLA, representing a 50% relative gain.](https://doi.org/10.48550/arXiv.2502.05485)** (2025-2-14)
