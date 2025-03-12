@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # name of image
-IMAGE=lab-website-renderer:latest
+IMAGE=lab-website-image:latest
 
 # name of running container
 CONTAINER=lab-website-renderer

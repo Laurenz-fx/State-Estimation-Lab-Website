@@ -1,61 +1,70 @@
-import os
-from serpapi import GoogleSearch
-from util import *
+from scholarly import scholarly
+import requests
+import yaml  # Zum Bearbeiten von YAML-Dateien
 
+# Fixed Google Scholar ID for Dieter Fox
+SCHOLAR_ID = "DqXsbPAAAAAJ"
 
-def main(entry):
-    """
-    receives single list entry from google-scholar data file
-    returns list of sources to cite
-    """
+def ensure_list_of_dicts(data):
+    """Ensure that data is always a list of dictionaries."""
+    if not isinstance(data, list):
+        # Falls die Antwort keine Liste ist, erstellen wir eine leere Liste
+        data = []
+    
+    # Wenn die Antwort keine Dictionaries enthält, dann erstellen wir ein leeres Dictionary für jedes Element
+    return [{'id': entry} if not isinstance(entry, dict) else entry for entry in data]
 
-    # get api key (serp api key to access google scholar)
-    api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "")
-    if not api_key:
-        raise Exception('No "GOOGLE_SCHOLAR_API_KEY" env var')
+def get_publications():
+    """Fetch all publications for the fixed author."""
+    author = scholarly.search_author_id(SCHOLAR_ID)
+    scholarly.fill(author, sections=['publications'])
+    publications = author.get('publications', [])
+    publications = ensure_list_of_dicts(publications)
+    return publications
 
-    # serp api properties
-    params = {
-        "engine": "google_scholar_author",
-        "api_key": api_key,
-        "num": 100,  # max allowed
-    }
+def get_doi(title):
+    """Search for the DOI of a publication using CrossRef."""
+    url = f"https://api.crossref.org/works?query.title={title}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        items = data.get("message", {}).get("items", [])
+        if items:
+            return items[0].get("DOI", "DOI not found")
+    return "DOI not found"
 
-    # get id from entry
-    _id = get_safe(entry, "gsid", "")
-    if not _id:
-        raise Exception('No "gsid" key')
+def save_dois_to_yaml(dois, filename='sources.yaml'):
+    """Append new DOIs to the YAML file without removing existing ones."""
+    try:
+        with open(filename, 'r') as file:
+            existing_data = yaml.safe_load(file) or []
+    except FileNotFoundError:
+        existing_data = []
 
-    # query api
-    @log_cache
-    @cache.memoize(name=__file__, expire=1 * (60 * 60 * 24))
-    def query(_id):
-        params["author_id"] = _id
-        return get_safe(GoogleSearch(params).get_dict(), "articles", [])
+    # Neue DOIs hinzufügen, falls sie noch nicht existieren
+    existing_dois = {entry["id"] for entry in existing_data}
+    for doi_entry in dois:
+        if doi_entry["id"] not in existing_dois:
+            existing_data.append(doi_entry)
 
-    response = query(_id)
+    with open(filename, 'w') as file:
+        yaml.dump(existing_data, file, default_flow_style=False)
 
-    # list of sources to return
-    sources = []
+def main(*args):
+    publications = get_publications()
+    if not publications:
+        return
+    
+    dois = []
+    for pub in publications:
+        title = pub.get("title", "Unknown")
+        doi = get_doi(title)
+        if doi != "DOI not found":
+            dois.append({"id": f"doi:{doi}"})
+        print(f"Title: {title}\nDOI: {doi}\n")
+    
+    # Speichern der DOIs in der YAML-Datei
+    save_dois_to_yaml(dois)
 
-    # go through response and format sources
-    for work in response:
-        # create source
-        year = get_safe(work, "year", "")
-        source = {
-            "id": get_safe(work, "citation_id", ""),
-            # api does not provide Manubot-citeable id, so keep citation details
-            "title": get_safe(work, "title", ""),
-            "authors": list(map(str.strip, get_safe(work, "authors", "").split(","))),
-            "publisher": get_safe(work, "publication", ""),
-            "date": (year + "-01-01") if year else "",
-            "link": get_safe(work, "link", ""),
-        }
-
-        # copy fields from entry to source
-        source.update(entry)
-
-        # add source to list
-        sources.append(source)
-
-    return sources
+if __name__ == "__main__":
+    main()

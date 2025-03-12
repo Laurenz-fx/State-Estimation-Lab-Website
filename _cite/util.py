@@ -86,11 +86,22 @@ def get_safe(item, path, default=None):
 
 
 def list_of_dicts(data):
-    """
-    check if data is list of dicts
-    """
+    """Ensure that data is a list of dictionaries."""
+    # Falls data None ist, setze es auf eine leere Liste
+    if data is None:
+        print("Data is None, setting it to an empty list.")
+        data = []
+    # Falls data keine Liste ist, setze es auf eine leere Liste
+    elif not isinstance(data, list):
+        print("Data is not a list, setting it to an empty list.")
+        data = []
+    # Falls Elemente in der Liste keine Dictionaries sind, versuche sie zu Dictionarys zu machen
+    elif not all(isinstance(entry, dict) for entry in data):
+        print("Not all elements are dictionaries, attempting to fix.")
+        data = [entry if isinstance(entry, dict) else {'id': entry} for entry in data]
 
-    return isinstance(data, list) and all(isinstance(entry, dict) for entry in data)
+    return data
+
 
 
 def format_date(_date):

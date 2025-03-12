@@ -296,3 +296,7 @@
     link: https://hamster-robot.github.io/
   plugin: sources.py
   file: sources.yaml
+- url: https://arxiv.org/abs/2411.19309
+  image: https://grape-vla.github.io/static/images/grape_model.png
+  plugin: sources.py
+  file: sources.yaml
