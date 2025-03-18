@@ -196,7 +196,7 @@
 
 - id: doi:10.1109/ICRA.2015.7138989
 
-- id: arxiv:1806.05726
+- id: doi:10.48550/arXiv.1504.07302
   type: paper
   description: Lorem ipsum _dolor sit amet_.
   image: https://publisher.com/striking-image-for-your-paper.jpg
