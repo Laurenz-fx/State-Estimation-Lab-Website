@@ -1528,31 +1528,6 @@
   link: https://doi.org/g88vrm
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1109/ICRA.2015.7138989
-  title: Depth-based tracking with physical constraints for robot manipulation
-  authors:
-  - Tanner Schmidt
-  - Katharina Hertkorn
-  - Richard Newcombe
-  - Zoltan Marton
-  - Michael Suppa
-  - Dieter Fox
-  publisher: 2015 IEEE International Conference on Robotics and Automation (ICRA)
-  date: '2015-05-01'
-  link: https://doi.org/g875zz
-  plugin: sources.py
-  file: sources.yaml
-- id: arxiv:1806.05726
-  title: Generalization of the Fermi Pseudopotential
-  authors:
-  - Trang T. Le
-  - Zach Osman
-  - D. K. Watson
-  - Martin Dunn
-  - B. A. McKinney
-  publisher: arXiv
-  date: '2019-05-01'
-  link: https://arxiv.org/abs/1806.05726
   type: paper
   description: Lorem ipsum _dolor sit amet_.
   image: https://publisher.com/striking-image-for-your-paper.jpg
@@ -1567,5 +1542,17 @@
   - big data
   - medicine
   repo: your-lab/some-repo
+- id: doi:10.1109/ICRA.2015.7138989
+  title: Depth-based tracking with physical constraints for robot manipulation
+  authors:
+  - Tanner Schmidt
+  - Katharina Hertkorn
+  - Richard Newcombe
+  - Zoltan Marton
+  - Michael Suppa
+  - Dieter Fox
+  publisher: 2015 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2015-05-01'
+  link: https://doi.org/g875zz
   plugin: sources.py
   file: sources.yaml
