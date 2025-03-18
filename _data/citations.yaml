@@ -401,19 +401,6 @@
   link: https://doi.org/g88qf6
   plugin: sources.py
   file: sources.yaml
-- id: patent:US20240177392A1
-  title: Collision detection for object rearrangement using a 3d scene representation
-  authors:
-  - Adithyavairavan Murali
-  - Arsalan Mousavian
-  - Clemens Eppner
-  - Adam Fishman
-  - Dieter Fox
-  publisher: ''
-  date: '2024-05-30'
-  link: https://patents.google.com/patent/US20240177392A1/en
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.48550/arXiv.2405.11656
   title: 'URDFormer: A Pipeline for Constructing Articulated Simulation Environments
     from Real-World Images'
@@ -432,25 +419,6 @@
   link: https://doi.org/g88q6q
   plugin: sources.py
   file: sources.yaml
-- id: patent:US20240131706A1
-  title: Collision-free motion generation
-  authors:
-  - Balakumar Sundaralingam
-  - Siva Kumar Sastry Hari
-  - Adam Harper Fishman
-  - Caelan Reed Garrett
-  - Alexander James MILLANE
-  - Elena OLEYNIKOVA
-  - Ankur Handa
-  - Fabio Tozeto Ramos
-  - Nathan Donald Ratliff
-  - Karl Van Wyk
-  - Dieter Fox
-  publisher: ''
-  date: '2024-04-25'
-  link: https://patents.google.com/patent/US20240131706A1/en
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.48550/arXiv.2404.12308
   title: 'ASID: Active Exploration for System Identification in Robotic Manipulation'
   authors:
@@ -465,20 +433,6 @@
   link: https://doi.org/g88q6r
   plugin: sources.py
   file: sources.yaml
-- id: patent:US11958529B2
-  title: Controlling position of robot by determining goal proposals by using neural
-    networks
-  authors:
-  - Ajay Uday Mandlekar
-  - Fabio Tozeto Ramos
-  - Byron Boots
-  - Animesh GARG
-  - Dieter Fox
-  publisher: ''
-  date: '2024-04-16'
-  link: https://patents.google.com/patent/US11958529B2/en
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.48550/arXiv.2402.08191
   title: 'THE COLOSSEUM: A Benchmark for Evaluating Generalization for Robotic Manipulation'
   authors:
@@ -491,19 +445,6 @@
   publisher: arXiv
   date: '2024-01-01'
   link: https://doi.org/g88q6s
-  plugin: sources.py
-  file: sources.yaml
-- id: patent:US20240037367A1
-  title: Model predictive control techniques for autonomous systems
-  authors:
-  - Alexander Conrad Lambert
-  - Adam Harper Fishman
-  - Dieter Fox
-  - Byron Boots
-  - Fabio Tozeto Ramos
-  publisher: ''
-  date: '2024-02-01'
-  link: https://patents.google.com/patent/US20240037367A1/en
   plugin: sources.py
   file: sources.yaml
 - id: https://openreview.net/forum?id=nIU0ZFmptX
@@ -565,18 +506,6 @@
   link: https://doi.org/g88q6w
   plugin: sources.py
   file: sources.yaml
-- id: patent:US11798183B2
-  title: Machine learning techniques for predicting depth information in image data
-  authors:
-  - Luyang Zhu
-  - Arsalan Mousavian
-  - Yu Xiang
-  - Dieter Fox
-  publisher: ''
-  date: '2023-10-24'
-  link: https://patents.google.com/patent/US11798183B2/en
-  plugin: sources.py
-  file: sources.yaml
 - id: https://openreview.net/forum?id=dsw5CNOVn1
   title: 'URDFormer: Constructing interactive Realistic Scenes from Real Images via
     Simulation and Generative Modeling'
@@ -604,33 +533,6 @@
   link: https://doi.org/g88q6x
   plugin: sources.py
   file: sources.yaml
-- id: patent:US20230294276A1
-  title: Simulating physical interactions for automated systems
-  authors:
-  - Yu-Wei Chao
-  - Yu Xiang
-  - Wei Yang
-  - Dieter Fox
-  - Chris Paxton
-  - Balakumar Sundaralingam
-  - Maya Cakmak
-  publisher: ''
-  date: '2023-09-21'
-  link: https://patents.google.com/patent/US20230294276A1/en
-  plugin: sources.py
-  file: sources.yaml
-- id: patent:US20230202031A1
-  title: Machine learning control of object handovers
-  authors:
-  - Wei Yang
-  - Christopher Jason Paxton
-  - Yu-Wei Chao
-  - Dieter Fox
-  publisher: ''
-  date: '2023-06-29'
-  link: https://patents.google.com/patent/US20230202031A1/en
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.48550/arXiv.2306.13818
   title: AR2-D2:Training a Robot Without a Robot
   authors:
@@ -642,17 +544,6 @@
   publisher: arXiv
   date: '2023-01-01'
   link: https://doi.org/g88q6z
-  plugin: sources.py
-  file: sources.yaml
-- id: patent:US11670001B2
-  title: Object pose estimation
-  authors:
-  - Arsalan Mousavian
-  - Yu Xiang
-  - Dieter Fox
-  publisher: ''
-  date: '2023-06-06'
-  link: https://patents.google.com/patent/US11670001B2/en
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICRA48891.2023.10160765
@@ -687,19 +578,6 @@
   publisher: 2023 IEEE International Conference on Robotics and Automation (ICRA)
   date: '2023-05-29'
   link: https://doi.org/g87536
-  plugin: sources.py
-  file: sources.yaml
-- id: patent:US11645492B2
-  title: Model predictive control techniques for autonomous systems
-  authors:
-  - Alexander Conrad Lambert
-  - Adam Harper Fishman
-  - Dieter Fox
-  - Byron Boots
-  - Fabio Tozeto Ramos
-  publisher: ''
-  date: '2023-05-09'
-  link: https://patents.google.com/patent/US11645492B2/en
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2303.15771
@@ -1006,18 +884,6 @@
   link: https://doi.org/g8755w
   plugin: sources.py
   file: sources.yaml
-- id: patent:US20210158561A1
-  title: Image volume for object pose estimation
-  authors:
-  - Keunhong Park
-  - Arsalan Mousavian
-  - Yu Xiang
-  - Dieter Fox
-  publisher: ''
-  date: '2021-05-27'
-  link: https://patents.google.com/patent/US20210158561A1/en
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1109/TASE.2021.3053422
   title: 'RMP<i>flow</i>: A Geometric Framework for Generation of Multitask Motion
     Policies'
@@ -1133,21 +999,6 @@
     (IROS)
   date: '2020-10-24'
   link: https://doi.org/g8754h
-  plugin: sources.py
-  file: sources.yaml
-- id: patent:US20200301510A1
-  title: Force estimation using deep learning
-  authors:
-  - Stan Birchfield
-  - Byron Boots
-  - Dieter Fox
-  - Ankur Handa
-  - Nathan Ratliff
-  - Balakumar Sundaralingam
-  - Alexander Lambert
-  publisher: ''
-  date: '2020-09-24'
-  link: https://patents.google.com/patent/US20200301510A1/en
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICRA40945.2020.9196935
