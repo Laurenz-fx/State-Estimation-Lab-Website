@@ -1542,3 +1542,30 @@
   link: https://doi.org/g875zz
   plugin: sources.py
   file: sources.yaml
+- id: arxiv:1806.05726
+  title: Generalization of the Fermi Pseudopotential
+  authors:
+  - Trang T. Le
+  - Zach Osman
+  - D. K. Watson
+  - Martin Dunn
+  - B. A. McKinney
+  publisher: arXiv
+  date: '2019-05-01'
+  link: https://arxiv.org/abs/1806.05726
+  type: paper
+  description: Lorem ipsum _dolor sit amet_.
+  image: https://publisher.com/striking-image-for-your-paper.jpg
+  buttons:
+  - type: source
+    link: https://github.com/your-lab/some-repo
+  - type: website
+    text: My Personal Website
+    link: http://some-website.com/
+  tags:
+  - biology
+  - big data
+  - medicine
+  repo: your-lab/some-repo
+  plugin: sources.py
+  file: sources.yaml
