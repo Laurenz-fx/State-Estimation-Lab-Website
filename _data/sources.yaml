@@ -192,24 +192,6 @@
 
 - id: doi:10.1007/s10514-015-9462-z
 
-- id: doi:10.48550/arXiv.1504.07302
-
 - id: doi:10.1109/ICRA.2015.7138989
 
 - id: doi:10.48550/arXiv.1504.07302
-  type: paper
-  description: Lorem ipsum _dolor sit amet_.
-  image: https://publisher.com/striking-image-for-your-paper.jpg
-  buttons:
-    - type: source
-      link: https://github.com/your-lab/some-repo
-    - type: website
-      text: My Personal Website
-      link: http://some-website.com/
-  tags:
-    - biology
-    - big data
-    - medicine
-  repo: your-lab/some-repo
-
-# ...another source
