@@ -1,19 +1,9 @@
 # site properties and page defaults
 title: UW Robotics and State Estimation Lab
-subtitle: UW Robotics and State Estimation Lab Website
 description: The RSE-Lab was established in 2001. We are interested in the development of computing systems that interact with the physical world in an intelligent way. To investigate such systems, we focus on problems in robotics and activity recognition. We develop rich yet efficient techniques for perception and control in mobile robot navigation, map building, collaboration, and manipulation. We also develop state estimation and machine learning approaches for areas such as object recognition and tracking, human robot interaction, and human activity recognition.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: true
-
-# site social media and other links
-links:
-  email: contact@Laurenz-fx.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: DqXsbPAAAAAJ&hl
-  github: Laurenz-fx
-  twitter: Laurenz-fx
-  youtube: Laurenz-fx
 
 ### jekyll settings
 
