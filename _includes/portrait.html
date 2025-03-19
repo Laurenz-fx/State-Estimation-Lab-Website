@@ -11,8 +11,14 @@
 
 <div class="portrait-wrapper">
   <a
-    {% if page.slug != member.slug %}
-      href="{{ member.url | relative_url | uri_escape }}"
+    {% if member.links.home-page %}
+      href="{{ member.links.home-page }}" target="_blank"
+    {% elsif member.links.google-scholar %}
+      href="https://scholar.google.com/citations?user={{ member.links.google-scholar }}" target="_blank"
+    {% elsif member.links.twitter %}
+      href="https://twitter.com/{{ member.links.twitter }}" target="_blank"
+    {% else %}
+      href="#"  <!-- Falls keine Links vorhanden sind, passiert nichts -->
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
@@ -55,6 +61,18 @@
         No research found.
       </span>
     {% endif %}
-
   </a>
+
+  <!-- ✅ Hier sind die Buttons für Home Page, Google Scholar und Twitter -->
+  <div class="portrait-links">
+    {% if member.links.home-page %}
+      <a href="{{ member.links.home-page }}" target="_blank" class="portrait-button">Home Page</a>
+    {% endif %}
+    {% if member.links.google-scholar %}
+      <a href="https://scholar.google.com/citations?user={{ member.links.google-scholar }}" target="_blank" class="portrait-button">Google Scholar</a>
+    {% endif %}
+    {% if member.links.twitter %}
+      <a href="https://twitter.com/{{ member.links.twitter }}" target="_blank" class="portrait-button">Twitter</a>
+    {% endif %}
+  </div>
 </div>
