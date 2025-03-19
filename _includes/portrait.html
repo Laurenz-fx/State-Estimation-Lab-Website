@@ -11,14 +11,8 @@
 
 <div class="portrait-wrapper">
   <a
-    {% if member.links.home-page %}
-      href="{{ member.links.home-page }}" target="_blank"
-    {% elsif member.links.google-scholar %}
-      href="https://scholar.google.com/citations?user={{ member.links.google-scholar }}" target="_blank"
-    {% elsif member.links.twitter %}
-      href="https://twitter.com/{{ member.links.twitter }}" target="_blank"
-    {% else %}
-      href="#"  <!-- Falls keine Links vorhanden sind, passiert nichts -->
+    {% if page.slug != member.slug %}
+      href="{{ member.url | relative_url | uri_escape }}"
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
@@ -61,5 +55,6 @@
         No research found.
       </span>
     {% endif %}
+
   </a>
 </div>

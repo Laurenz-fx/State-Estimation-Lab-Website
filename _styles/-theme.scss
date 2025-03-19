@@ -1,112 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600&display=swap');
+---
+---
 
-/* 🌙 Light & Dark Mode Farben */
+// Farben
 [data-dark="false"] {
-  --primary: #00b4d8; /* Helleres Cyan für mehr Kontrast */
-  --secondary: #023e8a; /* Tiefes Blau für professionelle Optik */
-  --text: #0a0a0a;
-  --background: #f8f9fa;
-  --background-alt: #e9ecef;
-  --light-gray: #ced4da;
-  --gray: #6c757d;
-  --dark-gray: #343a40;
-  --overlay: rgba(0, 0, 0, 0.1);
+  --primary: #0A84FF; /* Satteres Blau für modernes Tech-Feeling */
+  --secondary: #4DC8FF; /* Hellere Akzentfarbe für Interaktivität */
+  --text: #101010; /* Tiefes Schwarz für besseren Kontrast */
+  --background: #F5F7FA; /* Sanftes Off-White für eine klare UI */
+  --background-alt: #E3E8EE; /* Subtile Akzentfarbe für Karten/Panels */
+  --light-gray: #D1D5DB;
+  --gray: #6B7280;
+  --dark-gray: #374151;
+  --overlay: #00000020;
 }
-
 [data-dark="true"] {
-  --primary: #00e6ff; /* Neon-Cyan für Sci-Fi-Look */
-  --secondary: #023e8a;
-  --text: #f8f9fa;
-  --background: #121212;
-  --background-alt: #1a1a1a;
-  --light-gray: #2a2f36;
-  --gray: #8892a0;
-  --dark-gray: #ccd6e0;
-  --overlay: rgba(255, 255, 255, 0.1);
+  --primary: #0A84FF;
+  --secondary: #1E40AF; /* Tieferes Blau für dunkle UI */
+  --text: #E5E7EB; /* Hellgrau für Lesbarkeit im Dark Mode */
+  --background: #121212; /* Tiefes Schwarz für futuristischen Look */
+  --background-alt: #1A1A1A;
+  --light-gray: #374151;
+  --gray: #6B7280;
+  --dark-gray: #9CA3AF;
+  --overlay: #ffffff10;
 }
 
-/* ✨ Fonts */
 :root {
+  // Schriftarten – Moderne Tech-Ästhetik
   --title: "Inter", sans-serif;
   --heading: "Inter", sans-serif;
-  --body: "Space Grotesk", sans-serif;
+  --body: "Inter", sans-serif;
 
-  /* 📏 Schriftgrößen */
-  --large: 1.4rem;
-  --xl: 1.8rem;
-  --xxl: 2.2rem;
+  // Schriftgrößen – etwas größer für bessere Lesbarkeit
+  --large: 1.3rem;
+  --xl: 1.6rem;
+  --xxl: 1.8rem;
 
-  /* 🔥 Font Weights */
+  // Schriftgewicht – Klare Hierarchie
   --thin: 300;
   --regular: 400;
   --semi-bold: 600;
   --bold: 700;
 
-  /* 📐 Line Height */
-  --spacing: 2;
-  --compact: 1.6;
+  // Zeilenhöhe – Mehr Raum für Klarheit
+  --spacing: 1.8;
+  --compact: 1.4;
 
-  /* 💎 Effekte */
-  --rounded: 10px;
-  --shadow: 0 4px 15px 0 rgba(0, 230, 255, 0.2);
+  // Effekte – Sanftere Schatten und mehr abgerundete Elemente für einen modernen Look
+  --rounded: 8px;
+  --shadow: 0 4px 20px 0 var(--overlay);
   --transition: 0.3s ease-in-out;
-}
-
-/* 🏆 Allgemeines Styling */
-body {
-  font-family: var(--body);
-  background-color: var(--background);
-  color: var(--text);
-  transition: var(--transition);
-}
-
-/* 🟦 Buttons */
-.portrait-button {
-  padding: 10px 16px;
-  border-radius: var(--rounded);
-  background: var(--primary);
-  color: white;
-  font-weight: var(--semi-bold);
-  text-decoration: none;
-  font-size: 14px;
-  display: inline-block;
-  transition: var(--transition);
-  border: none;
-}
-
-.portrait-button:hover {
-  background: var(--secondary);
-  color: var(--text);
-  box-shadow: 0px 0px 12px var(--primary);
-}
-
-/* 🖼️ Bilder in der Übersicht */
-.portrait img {
-  border-radius: 50%;
-  box-shadow: 0px 4px 10px var(--overlay);
-  transition: var(--transition);
-}
-
-.portrait img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 15px var(--primary);
-}
-
-/* 📌 Links */
-a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-a:hover {
-  color: var(--secondary);
-}
-
-/* 🔗 Portrait Links */
-.portrait-links {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-top: 8px;
 }
