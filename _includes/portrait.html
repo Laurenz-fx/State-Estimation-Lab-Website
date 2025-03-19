@@ -62,7 +62,12 @@
       </span>
     {% endif %}
   </a>
-
+  
+  <p>DEBUG: Name - {{ member.name }}</p>
+  <p>DEBUG: Homepage - {{ member.links.home-page }}</p>
+  <p>DEBUG: Google Scholar - {{ member.links.google-scholar }}</p>
+  <p>DEBUG: Twitter - {{ member.links.twitter }}</p>
+  
   <!-- Buttons für direkte Links unter dem Portrait -->
   <div class="portrait-links">
     {% if member.links.home-page %}
