@@ -62,23 +62,4 @@
       </span>
     {% endif %}
   </a>
-  
-  <p>DEBUG: Name - {{ member.name }}</p>
-  <p>DEBUG: Full Links Object - {{ member.links }}</p>
-  <p>DEBUG: Homepage - {{ member.links.home-page }}</p>
-  <p>DEBUG: Google Scholar - {{ member.links.google-scholar }}</p>
-  <p>DEBUG: Twitter - {{ member.links.twitter }}</p>
-  
-  <!-- Buttons für direkte Links unter dem Portrait -->
-  <div class="portrait-links">
-    {% if member.links.home-page %}
-      <a href="{{ member.links.home-page }}" target="_blank" class="portrait-button">Home Page</a>
-    {% endif %}
-    {% if member.links.google-scholar %}
-      <a href="https://scholar.google.com/citations?user={{ member.links.google-scholar }}" target="_blank" class="portrait-button">Google Scholar</a>
-    {% endif %}
-    {% if member.links.twitter %}
-      <a href="https://twitter.com/{{ member.links.twitter }}" target="_blank" class="portrait-button">Twitter</a>
-    {% endif %}
-  </div>
 </div>
