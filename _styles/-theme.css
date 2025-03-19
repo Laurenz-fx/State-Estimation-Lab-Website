@@ -1,5 +1,5 @@
 [data-dark=false] {
-  --primary: #9004db;
+  --primary: #0795d9;
   --secondary: #7dd3fc;
   --text: #000000;
   --background: #ffffff;
@@ -11,7 +11,7 @@
 }
 
 [data-dark=true] {
-  --primary: #9004db;
+  --primary: #0795d9;
   --secondary: #075985;
   --text: #ffffff;
   --background: #181818;
@@ -26,7 +26,6 @@
   --title: "Biome", sans-serif;
   --heading: "Biome", sans-serif;
   --body: "Biome", sans-serif;
-  --code: "Roboto Mono", monospace;
   --large: 1.2rem;
   --xl: 1.4rem;
   --xxl: 1.6rem;
