@@ -10,7 +10,20 @@
 {% assign type = site.data.types[member.role] %}
 
 <div class="portrait-wrapper">
-  <div class="portrait" data-style="{{ include.style }}" aria-label="{{ member.name | default: "member link" | regex_strip }}">
+  <a
+    {% if member.homepage %}
+      href="{{ member.homepage }}" target="_blank"
+    {% elsif member.google_scholar %}
+      href="{{ member.google_scholar }}" target="_blank"
+    {% elsif member.twitter %}
+      href="{{ member.twitter }}" target="_blank"
+    {% else %}
+      href="#"  <!-- Falls keine Links vorhanden sind, passiert nichts -->
+    {% endif %}
+    class="portrait"
+    data-style="{{ include.style }}"
+    aria-label="{{ member.name | default: "member link" | regex_strip }}"
+  >
     {% if type %}
       {% include icon.html icon=type.icon %}
     {% endif %}
@@ -48,18 +61,18 @@
         No research found.
       </span>
     {% endif %}
+  </a>
 
-    <!-- Buttons für Links -->
-    <div class="portrait-links">
-      {% if member.homepage %}
-        <a href="{{ member.homepage }}" target="_blank" class="portrait-button">Home Page</a>
-      {% endif %}
-      {% if member.google_scholar %}
-        <a href="{{ member.google_scholar }}" target="_blank" class="portrait-button">Google Scholar</a>
-      {% endif %}
-      {% if member.twitter %}
-        <a href="{{ member.twitter }}" target="_blank" class="portrait-button">Twitter</a>
-      {% endif %}
-    </div>
+  <!-- Buttons für direkte Links unter dem Portrait -->
+  <div class="portrait-links">
+    {% if member.homepage %}
+      <a href="{{ member.homepage }}" target="_blank" class="portrait-button">Home Page</a>
+    {% endif %}
+    {% if member.google_scholar %}
+      <a href="{{ member.google_scholar }}" target="_blank" class="portrait-button">Google Scholar</a>
+    {% endif %}
+    {% if member.twitter %}
+      <a href="{{ member.twitter }}" target="_blank" class="portrait-button">Twitter</a>
+    {% endif %}
   </div>
 </div>
