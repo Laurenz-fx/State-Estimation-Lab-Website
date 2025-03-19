@@ -22,11 +22,14 @@
   --overlay: #ffffff10;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;600&family=Space+Grotesk:wght@300;400;600&display=swap');
+
 :root {
-  // Font families
   --title: "Inter", sans-serif;
-  --heading: "Inter", sans-serif;
+  --heading: "IBM Plex Sans", sans-serif;
   --body: "Space Grotesk", sans-serif;
+}
+
 
   // Font sizes
   --large: 1.3rem;
