@@ -56,15 +56,13 @@
       </span>
     {% endif %}
   </a>
-
-  {% if member.links %}
-  <div class="portrait-links" style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-    {% for link in member.links %}
-      {% assign key = link[0] %}
-      {% assign value = link[1] %}
-      {% include button.html type=key link=value style="bare" %}
-    {% endfor %}
-  {% endif %}
-
   </div>
+{% if member.links %}
+<div class="portrait-links" style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
+   {% for link in member.links %}
+    {% assign key = link[0] %}
+     {% assign value = link[1] %}
+     {% include button.html type=key link=value style="bare" %}
+  {% endfor %}
+ {% endif %}
 </div>
