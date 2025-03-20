@@ -1,5 +1,9 @@
+@charset "UTF-8";
 .portrait-wrapper {
-  display: contents;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .portrait {
@@ -71,6 +75,39 @@
 .portrait[data-style=tiny] .portrait-role,
 .portrait[data-style=tiny] .portrait-research {
   display: none;
+}
+
+/* ✅ Neue Styles für die Buttons unter den Mitgliedern */
+.portrait-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* ✅ Buttons sollen gut sichtbar und klickbar sein */
+.portrait-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary); /* Verwendet die Hauptfarbe des Themes */
+  transition: background 0.2s;
+  font-size: 0.9rem;
+}
+
+/* ✅ Hover-Effekt für Buttons */
+.portrait-links a:hover {
+  background-color: var(--secondary);
+}
+
+/* ✅ Falls die Buttons in einer Zeile nicht passen, automatisch umbrechen */
+.portrait-links {
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=portrait.css.map */
