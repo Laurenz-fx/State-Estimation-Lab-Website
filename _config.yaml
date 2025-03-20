@@ -26,9 +26,9 @@ defaults:
       layout: post
 
 collections:
-  # generate page for each member
   members:
     output: true
+    permalink: /members/:slug
   # generate page for each post
   posts:
     output: true
