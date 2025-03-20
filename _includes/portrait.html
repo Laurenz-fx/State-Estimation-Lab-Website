@@ -1,4 +1,5 @@
-<pre>DEBUGGING CONTACT: {{ member.contact | inspect }}</pre>
+<pre>DEBUGGING MEMBER: {{ member | inspect }}</pre>
+<pre>DEBUGGING PAGE LINKS: {{ page.links | inspect }}</pre>
 
 {% if include.lookup %}
   {% assign member = site.members | where: "slug", include.lookup | first %}
@@ -57,12 +58,14 @@
   </a>
 
   <!-- ✅ Falls Links existieren, Buttons anzeigen -->
-  {% if member.contact %}
+  {% if member.links or page.links %}
   <div class="portrait-links" style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
     
-    {% if member.contact.home-page %}
+    {% assign links = member.links | default: page.links %}
+
+    {% if links.home-page %}
     <div class="button-wrapper">
-      <a class="button" href="{{ member.contact.home-page }}" data-tooltip="Home page" data-style="bare" aria-label="Home page">
+      <a class="button" href="{{ links.home-page }}" data-tooltip="Home page" data-style="bare" aria-label="Home page">
         <i class="icon fa-solid fa-house-user"></i>
         <span>Home Page</span>
       </a>
@@ -71,9 +74,9 @@
       <p>DEBUG: Keine Home Page</p>
     {% endif %}
 
-    {% if member.contact.google-scholar %}
+    {% if links.google-scholar %}
     <div class="button-wrapper">
-      <a class="button" href="https://scholar.google.com/citations?user={{ member.contact.google-scholar }}" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+      <a class="button" href="https://scholar.google.com/citations?user={{ links.google-scholar }}" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
         <i class="icon fa-brands fa-google"></i>
         <span>Google Scholar</span>
       </a>
@@ -82,9 +85,9 @@
       <p>DEBUG: Kein Google Scholar</p>
     {% endif %}
 
-    {% if member.contact.twitter %}
+    {% if links.twitter %}
     <div class="button-wrapper">
-      <a class="button" href="https://twitter.com/{{ member.contact.twitter }}" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
+      <a class="button" href="https://twitter.com/{{ links.twitter }}" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
         <i class="icon fa-brands fa-twitter"></i>
         <span>Twitter</span>
       </a>
