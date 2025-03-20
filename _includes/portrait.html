@@ -1,3 +1,4 @@
+<pre>DEBUGGING MEMBER: {{ member | inspect }}</pre>
 {% if include.lookup %}
   {% assign member = site.members | where: "slug", include.lookup | first %}
 {% else %}
