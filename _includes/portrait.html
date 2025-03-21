@@ -12,7 +12,7 @@
 <div class="portrait-wrapper">
   <a
     {% if page.slug != member.slug %}
-      href="{{ member.home-page | relative_url | uri_escape }}"
+      href="{{ member.url | relative_url | uri_escape }}"
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
