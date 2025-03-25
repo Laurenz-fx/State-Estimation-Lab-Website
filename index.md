@@ -9,10 +9,6 @@ The RSE-Lab was established in 2001. We are interested in the development of com
 
 ## Highlights
 
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
 {%
   include button.html
   link="research"
@@ -31,10 +27,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   title="Our Research"
   text=text
 %}
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 {%
   include button.html
