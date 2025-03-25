@@ -1,5 +1,5 @@
 <header
-  class="background"
+  class="background site-header"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
@@ -8,15 +8,15 @@
     data-big
   {% endif %}
 >
-  <div class="header-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
-    <!-- Titel & Logo (links) -->
-    <a href="{{ "/" | relative_url }}" class="home" style="display: flex; align-items: center; gap: 0.5rem;">
+  <div class="header-inner">
+    <!-- Logo + Titel (links) -->
+    <a href="{{ "/" | relative_url }}" class="home">
       {% if logo %}
         <span class="logo">
           {% if svg %}
             {{ svg | file_read }}
           {% else %}
-            <img src="{{ logo | relative_url | uri_escape }}" alt="logo" style="height: 40px;">
+            <img src="{{ logo | relative_url | uri_escape }}" alt="logo">
           {% endif %}
         </span>
       {% endif %}
@@ -33,7 +33,7 @@
     </a>
 
     <!-- Navigation (rechts) -->
-    <nav style="display: flex; gap: 1.5rem;">
+    <nav>
       {% assign pages = site.pages
         | where_exp: "page", "page.nav"
         | sort: "nav.order"
