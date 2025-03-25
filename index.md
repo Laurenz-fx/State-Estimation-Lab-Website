@@ -9,6 +9,8 @@ The RSE-Lab was established in 2001. We are interested in the development of com
 
 ## Highlights
 
+{% capture text %}
+
 {%
   include button.html
   link="research"
@@ -27,6 +29,8 @@ The RSE-Lab was established in 2001. We are interested in the development of com
   title="Our Research"
   text=text
 %}
+
+{% capture text %}
 
 {%
   include button.html
