@@ -7,8 +7,14 @@
 {% assign logo = svg | default: png | default: jpg | default: nil %}
 
 <header
-  class="background"
-  style="--image: url('{{ image | relative_url | uri_escape }}')"
+  class="background site-header"
+  style="
+    --image: url('{{ image | relative_url | uri_escape }}');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  "
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
@@ -16,13 +22,14 @@
     data-big
   {% endif %}
 >
-  <a href="{{ "/" | relative_url }}" class="home">
+  <!-- Logo und Titel (links) -->
+  <a href="{{ "/" | relative_url }}" class="home" style="display: flex; align-items: center; gap: 0.5rem;">
     {% if logo %}
       <span class="logo">
         {% if svg %}
           {{ svg | file_read }}
         {% else %}
-          <img src="{{ logo | relative_url | uri_escape }}" alt="logo">
+          <img src="{{ logo | relative_url | uri_escape }}" alt="logo" style="height: 40px;">
         {% endif %}
       </span>
     {% endif %}
@@ -38,9 +45,8 @@
     {% endif %}
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
+  <!-- Navigation (rechts) -->
+  <nav style="display: flex; gap: 1.5rem;">
     {% assign pages = site.pages
       | where_exp: "page", "page.nav"
       | sort: "nav.order"
