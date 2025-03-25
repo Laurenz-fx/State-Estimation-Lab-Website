@@ -325,8 +325,15 @@
 
 
 
-<header class="background" style="--image: url('/lab-website-template/images/background.jpg')" data-dark="true">
-  <a href="/lab-website-template/" class="home">
+<header class="background site-header" style="
+    --image: url('/lab-website-template/images/background.jpg');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  " data-dark="true">
+  <!-- Logo und Titel (links) -->
+  <a href="/lab-website-template/" class="home" style="display: flex; align-items: center; gap: 0.5rem;">
     
     
       <span class="title-text" data-tooltip="Home">
@@ -338,9 +345,8 @@
     
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
+  <!-- Navigation (rechts) -->
+  <nav style="display: flex; gap: 1.5rem;">
     
     
       
