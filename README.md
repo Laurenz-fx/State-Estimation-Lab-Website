@@ -6,6 +6,3 @@
   # Laurenz-fx's Website
 
   Visit **[laurenz-fx.github.io/State-Estimation-Lab-Website](https://laurenz-fx.github.io/State-Estimation-Lab-Website)** 🚀
-
-  _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
-
