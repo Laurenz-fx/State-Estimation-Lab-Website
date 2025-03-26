@@ -80,9 +80,31 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
   z-index: 1000;
   background-color: var(--background);
   box-shadow: var(--shadow);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  font-weight: var(--semi-bold);
+  color: var(--text);
 }
 
 .seattle-hero,
