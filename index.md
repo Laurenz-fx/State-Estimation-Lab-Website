@@ -45,7 +45,7 @@ The RSE-Lab was established in 2001. We are interested in the development of com
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team.png"
   link="team"
   title="Our Team"
   text=text
