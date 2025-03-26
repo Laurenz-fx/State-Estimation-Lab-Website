@@ -1,1 +1,1 @@
-Sitemap: https://laurenz-fx.github.io/lab-website-template/sitemap.xml
+Sitemap: https://laurenz-fx.github.io/State-Estimation-Lab-Website/sitemap.xml
