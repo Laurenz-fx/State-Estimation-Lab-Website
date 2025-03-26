@@ -1,8 +1,6 @@
-@charset "UTF-8";
-/* Farben */
 [data-dark=false] {
-  --primary: #4B2E83; /* Soft Violettblau */
-  --secondary: #604b8a; /* Lila Akzent */
+  --primary: #4B2E83;
+  --secondary: #604b8a;
   --text: #111827;
   --background: #F9FAFB;
   --background-alt: #E5E7EB;
@@ -24,12 +22,10 @@
   --overlay: #ffffff10;
 }
 
-/* Schriftarten & Typografie */
 :root {
   --title: "Inter", sans-serif;
   --heading: "Inter", sans-serif;
   --body: "Inter", sans-serif;
-  /* Schriftgrößen */
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.125rem;
@@ -37,12 +33,10 @@
   --text-2xl: 1.5rem;
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
-  /* Gewicht */
   --thin: 300;
   --regular: 400;
   --semi-bold: 600;
   --bold: 700;
-  /* Zeilenhöhe & Spacing */
   --spacing: 1.8;
   --compact: 1.4;
   --word-spacing: 0.05em;
@@ -52,15 +46,14 @@
   --transition: 0.3s ease-in-out;
 }
 
-/* Konsistente Abstände */
 body {
   font-family: var(--body);
   line-height: var(--spacing);
   word-spacing: var(--word-spacing);
   letter-spacing: var(--letter-spacing);
+  padding-top: 80px;
 }
 
-/* Headings vereinheitlichen */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading);
   font-weight: var(--bold);
@@ -92,16 +85,24 @@ h6 {
   font-size: var(--text-base);
 }
 
-/* Bilder wie Seattle-Background nicht übermäßig croppen */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--background);
+  box-shadow: var(--shadow);
+}
+
 .seattle-hero,
 .hero-background {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; /* Oder contain, je nach gewünschtem Verhalten */
+  background-size: cover;
   object-fit: cover;
 }
 
-/* Fallback für zu stark gecroppte Bilder */
 img.hero-img,
 img.full-background {
   width: 100%;
