@@ -1,22 +1,22 @@
 [data-dark=false] {
-  --primary: #4B2E83;
-  --secondary: #604b8a;
-  --text: #111827;
-  --background: #F9FAFB;
-  --background-alt: #E5E7EB;
-  --light-gray: #D1D5DB;
-  --gray: #6B7280;
-  --dark-gray: #374151;
-  --overlay: #00000020;
+  --primary: #4b2e83ff; /* tekhelet */
+  --secondary: #d664beff; /* orchid */
+  --text: #050401ff; /* black */
+  --background: #fbf9ffff; /* ghost white */
+  --background-alt: #e0e0e2ff; /* platinum */
+  --light-gray: #e0e0e2ff; /* platinum (wiederverwendet) */
+  --gray: #6B7280; /* belassen, da nicht in Palette */
+  --dark-gray: #374151; /* belassen */
+  --overlay: #4b2e8388; /* leicht transparente Version von tekhelet */
 }
 
 [data-dark=true] {
-  --primary: #4B2E83;
-  --secondary: #604b8a;
-  --text: #F3F4F6;
-  --background: #0B0B12;
-  --background-alt: #111827;
-  --light-gray: #1F2937;
+  --primary: #4b2e83ff;
+  --secondary: #d664beff;
+  --text: #fbf9ffff;
+  --background: #050401ff;
+  --background-alt: #4b2e83ff;
+  --light-gray: #e0e0e2ff;
   --gray: #6B7280;
   --dark-gray: #9CA3AF;
   --overlay: #ffffff10;
