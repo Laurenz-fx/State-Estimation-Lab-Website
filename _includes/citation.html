@@ -49,11 +49,11 @@
       >
         {{
           citation.authors
-          | join: ","
-          | split: ","
-          | array_carve: 5
+          | join: "," 
+          | split: "," 
+          | array_carve: 5 
           | join: ", "
-          | markdownify
+          | markdownify 
           | remove: "<p>" | remove: "</p>"
           | default: "[no author info]"
         }}
@@ -88,12 +88,12 @@
         {% if citation.buttons.size > 0 %}
           <div class="citation-buttons">
             {% for button in citation.buttons %}
-              {%
-                include button.html
-                type=button.type
-                icon=button.icon
-                text=button.text
-                link=button.link
+              {% 
+                include button.html 
+                type=button.type 
+                icon=button.icon 
+                text=button.text 
+                link=button.link 
                 style="bare"
               %}
             {% endfor %}
@@ -101,7 +101,9 @@
         {% endif %}
 
         {% if citation.tags.size > 0 or citation.repo %}
-          {% include tags.html tags=citation.tags repo=citation.repo %}
+          <div class="citation-tags">
+            {% include tags.html tags=citation.tags repo=citation.repo %}
+          </div>
         {% endif %}
       {% endif %}
     </div>
