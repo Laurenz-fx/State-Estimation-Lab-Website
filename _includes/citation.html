@@ -59,6 +59,21 @@
         }}
       </div>
 
+      {% if citation.conference %}
+        <div class="citation-conference">
+          📍 {{ citation.conference }}
+          {% if citation.award %}
+            {% if citation.award == "best paper" %}
+              🏆
+            {% elsif citation.award == "oral" %}
+              🎤
+            {% elsif citation.award == "poster" %}
+              🖼
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endif %}
+
       <div class="citation-details">
         <span class="citation-publisher">
           {{- citation.publisher | default: "[no publisher info]" -}}
