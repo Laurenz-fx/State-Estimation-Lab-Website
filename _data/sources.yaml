@@ -6,7 +6,7 @@
   image: \images\HAMSTER_Thumbnail.png
   buttons:
     - type: website
-      text: Project Page
+      text: Website
       link: https://hamster-robot.github.io/#
   tags:
     - VisionLanguageModels
