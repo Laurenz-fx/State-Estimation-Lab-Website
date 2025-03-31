@@ -247,9 +247,10 @@
     text: Website
     link: https://hamster-robot.github.io/#
   tags:
-  - VisionLanguageModels
-  - Generalization
-  - HierarchicalLearning
+  - behaviour cloning
+  - vision language action
+  conference: ICRA 2025
+  award: best paper
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2501.18564
