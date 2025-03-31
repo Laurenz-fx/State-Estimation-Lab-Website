@@ -243,7 +243,8 @@
     domains and improves real-robot performance by 20% on average.
   image: https://imgur.com/a/OW2B2fB
   buttons:
-  - type: source
+  - type: website
+    text: Project Page
     link: https://hamster-robot.github.io/#
   tags:
   - VisionLanguageModels
