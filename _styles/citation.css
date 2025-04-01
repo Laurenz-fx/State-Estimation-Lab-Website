@@ -72,7 +72,7 @@
 .citation-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 }
 
 .citation-buttons .button {
