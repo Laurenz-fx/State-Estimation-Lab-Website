@@ -94,5 +94,11 @@
     height: 180px;
   }
 }
+.citation-tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
 
 /*# sourceMappingURL=citation.css.map */
