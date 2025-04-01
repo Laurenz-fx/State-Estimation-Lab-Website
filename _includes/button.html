@@ -5,7 +5,7 @@
   <div class="button-wrapper">
     <a
       class="button"
-      href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+      href="{{ button.link | replace: "$LINK", button.link | relative_url }}" target="_blank"
       {% if button.tooltip %}
         data-tooltip="{{ button.tooltip | xml_escape }}"
       {% endif %}
@@ -21,19 +21,5 @@
       {% endif %}
     </a>
   </div>
-
-  {% if type == "twitter" %}
-    <a href="{{ link }}" target="_blank">
-      <img src="{{ "images/icons/twitter.svg" | relative_url }}" alt="Twitter" width="20">
-    </a>
-  {% elsif type == "scholar" %}
-    <a href="{{ link }}" target="_blank">
-      <img src="{{ "images/icons/scholar.svg" | relative_url }}" alt="Google Scholar" width="20">
-    </a>
-  {% elsif type == "home-page" %}
-    <a href="{{ link }}" target="_blank">
-      <img src="{{ "images/icons/home-page.svg" | relative_url }}" alt="Homepage" width="20">
-    </a>
-  {% endif %}
 {% endif %}
 
