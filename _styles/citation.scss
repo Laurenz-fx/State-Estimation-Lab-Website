@@ -101,3 +101,10 @@ $wrap: 800px;
     height: $thumb-size;
   }
 }
+
+.citation-tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
