@@ -241,7 +241,7 @@
     Instead of predicting actions directly, a high-level model generates a 2D path,
     which guides a low-level controller. This approach leads to better transfer across
     domains and improves real-robot performance by 20% on average.
-  image: \images\HAMSTER_Thumbnail.png
+  image: images/HAMSTER_Thumbnail.png
   buttons:
   - type: website
     text: Website
@@ -249,8 +249,8 @@
   tags:
   - behaviour cloning
   - vision language action
-  conference: ICRA 2025
-  award: best paper
+  - ICRA 2025
+  - best paper
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2501.18564
