@@ -13,7 +13,7 @@
     {% if include.style == "rich" %}
       <a
         {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
+          href="{{ citation.link | relative_url | uri_escape }}" target="_blank"
         {% endif %}
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
@@ -33,7 +33,7 @@
 
       <a
         {% if citation.link %}
-          href="{{ citation.link | relative_url | xml_escape }}"
+          href="{{ citation.link | relative_url | xml_escape }}" target="_blank"
         {% endif %}
         class="citation-title"
       >
