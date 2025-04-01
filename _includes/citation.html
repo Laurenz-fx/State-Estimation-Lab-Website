@@ -67,7 +67,7 @@
 
       {% if citation.awards.size > 0 or citation.repo %}
           <div class="citation-awards">
-            {% include awards.html tags=citation.awards repo=citation.repo %}
+            {% include awards.html awards=citation.awards repo=citation.repo %}
           </div>
         {% endif %}
 
