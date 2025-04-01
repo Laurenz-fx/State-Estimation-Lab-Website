@@ -250,6 +250,7 @@
   - behaviour cloning
   - vision language action
   - ICRA 2025
+  awards:
   - best paper
   plugin: sources.py
   file: sources.yaml
