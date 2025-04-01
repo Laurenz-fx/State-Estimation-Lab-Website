@@ -59,24 +59,12 @@
         }}
       </div>
 
-      {% if citation.awards.size > 0 or citation.repo %}
-          <div class="citation-awards">
-            {% include awards.html awards=citation.awards repo=citation.repo %}
-          </div>
-        {% endif %}
+      <!-- 🐞 DEBUG: Zeigt den Inhalt von citation.awards -->
+      <p style="color:red;">DEBUG citation.awards: {{ citation.awards | inspect }}</p>
 
-      {% if citation.conference %}
-        <div class="citation-conference">
-          📍 {{ citation.conference }}
-          {% if citation.award %}
-            {% if citation.award == "best paper" %}
-              🏆
-            {% elsif citation.award == "oral" %}
-              🎤
-            {% elsif citation.award == "poster" %}
-              🖼
-            {% endif %}
-          {% endif %}
+      {% if citation.awards.size > 0 or citation.repo %}
+        <div class="citation-awards">
+          {% include awards.html awards=citation.awards repo=citation.repo %}
         </div>
       {% endif %}
 
