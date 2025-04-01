@@ -34,7 +34,8 @@ $wrap: 800px;
 
 .citation-text {
   position: relative;
-  display: inline-flex;
+  display: flex;              // <-- minimal geändert (vorher: inline-flex)
+  flex-direction: column;     // <-- minimal hinzugefügt
   flex-wrap: wrap;
   gap: 10px;
   max-width: 100%;
