@@ -1,15 +1,17 @@
 {% if include.lookup %}
   {% assign citation = site.data.citations
     | where_exp: "citation",
-      "citation.id == include.lookup or citation.title contains include.lookup"
+      "citation.id == include.lookup or citation.doi == include.lookup or citation.title contains include.lookup"
     | first
   %}
 {% else %}
   {% assign citation = include %}
 {% endif %}
 
-<p style="color:orange;">DEBUG citation.id: {{ citation.id }}</p>
-
+<!-- 🐞 DEBUG-Ausgabe -->
+<p style="color:blue;">DEBUG citation.id: {{ citation.id }}</p>
+<p style="color:blue;">DEBUG citation.doi: {{ citation.doi }}</p>
+<p style="color:red;">DEBUG citation.awards: {{ citation.awards | inspect }}</p>
 
 <div class="citation-container">
   <div class="citation">
@@ -62,14 +64,11 @@
         }}
       </div>
 
-      <!-- 🐞 DEBUG: Zeigt den Inhalt von citation.awards -->
-      <p style="color:red;">DEBUG citation.awards: {{ citation.awards | inspect }}</p>
-
-      {% if citation.awards.size > 0 or citation.repo %}
-          <div class="citation-awards">
-            {% include awards.html awards=citation.awards repo=citation.repo %}
-          </div>
-        {% endif %}
+      {% if citation.awards %}
+        <div class="citation-awards">
+          {% include awards.html awards=citation.awards repo=citation.repo %}
+        </div>
+      {% endif %}
 
       <div class="citation-details">
         <span class="citation-publisher">
