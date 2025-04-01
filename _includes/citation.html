@@ -59,6 +59,12 @@
         }}
       </div>
 
+      {% if citation.awards %}
+        <div class="citation-awards">
+          {% include awards.html awards=citation.awards %}
+        </div>
+      {% endif %}
+
       {% if citation.conference %}
         <div class="citation-conference">
           📍 {{ citation.conference }}
