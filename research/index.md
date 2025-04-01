@@ -1,4 +1,3 @@
-<!-- trigger build -->
 ---
 title: Research
 nav:
