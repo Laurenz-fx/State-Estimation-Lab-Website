@@ -2,9 +2,8 @@ backend:
   name: github
   repo: laurenz-fx/State-Estimation-Lab-Website
   branch: main
-  auth_type: device
-  app_id: Ov23liXkRLk3e8YVBu32
-  base_url: https://laurenz-fx.github.io
+  base_url: https://authenticator.netlify.app
+  auth_endpoint: oauth/authorize
 
 media_folder: "images/team"
 public_folder: "/images/team"
