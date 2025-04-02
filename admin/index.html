@@ -1,9 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=cms.html" />
+    <meta charset="utf-8" />
+    <title>CMS</title>
+    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
   </head>
   <body>
-    <p>Redirecting to CMS…</p>
+    <script>
+      if (typeof window.CMS !== "undefined") {
+        CMS.init();
+      } else {
+        document.body.innerHTML = "<p style='color:red;'>CMS failed to load.</p>";
+      }
+    </script>
   </body>
 </html>
