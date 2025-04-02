@@ -10,5 +10,12 @@ layout: null
     <script src="https://unpkg.com/netlify-cms@2.10.49/dist/netlify-cms.js"></script>
   </head>
   <body>
+    <script>
+      if (typeof CMS !== "undefined") {
+        CMS.init();
+      } else {
+        document.body.innerHTML = "<p style='color:red;'>CMS failed to load. Check script version.</p>";
+      }
+    </script>
   </body>
 </html>
