@@ -74,7 +74,13 @@
 }
 
 .portrait-research {
-  opacity: 80%;
+  opacity: 90%;
+  font-size: small;
+}
+
+.portrait-role {
+  font-size: small;
+  opacity: 90%;
 }
 
 /*# sourceMappingURL=portrait.css.map */
