@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: dein-user/dein-repo  # z. B. mylab/mysite
-  branch: main               # oder "master", je nach Repo
+  repo: laurenz-fx/State-Estimation-Lab-Website
+  branch: main
 
 media_folder: "images/team"
 public_folder: "/images/team"
