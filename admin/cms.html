@@ -2,17 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Content Manager</title>
+    <title>Decap CMS</title>
     <script src="https://unpkg.com/netlify-cms@2.10.49/dist/netlify-cms.js"></script>
   </head>
   <body>
     <div id="nc-root"></div>
     <script>
-      if (typeof CMS !== "undefined") {
-        CMS.init();
-      } else {
-        document.body.innerHTML = "<p style='color:red;'>CMS failed to load.</p>";
-      }
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof CMS !== "undefined") {
+          CMS.init();
+        } else {
+          document.body.innerHTML = "<p style='color:red;'>CMS failed to load (no CMS object).</p>";
+        }
+      });
     </script>
   </body>
 </html>
