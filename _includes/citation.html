@@ -61,11 +61,13 @@
 
       {% if citation.awards %}
         <div class="citation-awards">
+          <strong>DEBUG: Awards found!</strong>
           {% for award in citation.awards %}
             <span class="award-label">{{ award }}</span>
           {% endfor %}
         </div>
       {% endif %}
+
 
 
       <div class="citation-details">
