@@ -22,6 +22,10 @@
     {% endfor %}
   {% endif %}
 
+  {% if include.awards %}
+  {% include awards.html awards=include.awards link="blog" %}
+  {% endif %}
+
   {% assign published = include.published | date: "%B %d, %Y" %}
   {% assign updated = include.updated | date: "%B %d, %Y" %}
 
