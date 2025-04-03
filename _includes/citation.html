@@ -5,9 +5,10 @@
     | first
   %}
 {% else %}
-  {% assign citation = include.citation %}
+  {% assign citation = include %}
 {% endif %}
 
+<pre>DEBUG include: {{ include | jsonify }}</pre>
 <pre>DEBUG citation full: {{ citation | jsonify }}</pre>
 
 
