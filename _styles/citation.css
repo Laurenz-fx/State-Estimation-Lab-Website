@@ -50,7 +50,7 @@
 
 .citation-title {
   font-weight: var(--semi-bold);
-  font-size: x-large;
+  font-size: larger;
 }
 
 .citation-text > .icon {
