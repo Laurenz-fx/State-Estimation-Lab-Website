@@ -58,14 +58,6 @@
           | default: "[no author info]"
         }}
       </div>
-      
-      <pre>AWARDS raw: {{ citation.awards | jsonify }}</pre>
-
-      {% assign id = include.lookup or include.citation.id or include.id %}
-      {% assign citation = site.data.citations | where_exp: "c", "c.id == id" | first %}
-
-
-
 
       <div class="citation-details">
         <span class="citation-publisher">
