@@ -8,14 +8,6 @@
   {% assign citation = include %}
 {% endif %}
 
-<pre>{{ site.data.citations | jsonify }}</pre>
-<pre>DEBUG lookup: {{ lookup }}</pre>
-<pre>DEBUG style: {{ style }}</pre>
-<pre>DEBUG include: {{ include | jsonify }}</pre>
-<pre>DEBUG citation full: {{ citation | jsonify }}</pre>
-
-
-
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" %}
@@ -69,9 +61,12 @@
 
       {% if citation.awards %}
         <div class="citation-awards">
-          {% include awards.html awards=citation.awards repo=citation.repo %}
+          {% for award in citation.awards %}
+            <span class="award-label">{{ award }}</span>
+          {% endfor %}
         </div>
       {% endif %}
+
 
       <div class="citation-details">
         <span class="citation-publisher">
