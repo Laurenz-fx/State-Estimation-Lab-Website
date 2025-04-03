@@ -58,6 +58,8 @@
           | default: "[no author info]"
         }}
       </div>
+      
+      <pre>AWARDS raw: {{ citation.awards | jsonify }}</pre>
 
       {% if citation.awards %}
         <div class="citation-awards">
