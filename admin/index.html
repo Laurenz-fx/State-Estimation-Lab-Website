@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms@3.6.2/dist/decap-cms.js"></script>
   </head>
   <body>
     <div id="nc-root"></div>
 
     <script>
-      window.addEventListener('load', function () {
+      window.addEventListener("load", () => {
+        // Vergewissere dich, dass das CMS-Skript korrekt geladen wurde
         if (typeof window.CMS !== "undefined") {
           window.CMS.init();
         } else {
