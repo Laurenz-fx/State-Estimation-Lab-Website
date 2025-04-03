@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/decap-cms@3.6.2/dist/decap-cms.js"></script>
   </head>
   <body>
     <div id="nc-root"></div>
+
+    <!-- Decap CMS lädt hier -->
+    <script src="https://unpkg.com/decap-cms@3.6.2/dist/decap-cms.js"></script>
+
     <script>
-      window.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('load', function () {
         if (typeof CMS !== "undefined") {
           CMS.init();
         } else {
-          document.body.innerHTML = "<p style='color:red;'>CMS failed to load.</p>";
+          document.body.innerHTML = "<p style='color:red;'>CMS failed to load (script missing).</p>";
         }
       });
     </script>

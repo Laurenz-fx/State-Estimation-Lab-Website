@@ -2,8 +2,8 @@ backend:
   name: github
   repo: laurenz-fx/State-Estimation-Lab-Website
   branch: main
-  auth_type: implicit
-  app_id: Ov23liXkRLk3e8YVBu32
+  auth_scope: repo
+  client_id: Ov23liXkRLk3e8YVBu32
 
 media_folder: "images/team"
 public_folder: "/images/team"
