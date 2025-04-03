@@ -7,11 +7,10 @@
   </head>
   <body>
     <div id="nc-root"></div>
-
     <script>
-      window.addEventListener("load", () => {
-        if (typeof window.CMS !== "undefined") {
-          window.CMS.init();
+      window.addEventListener('DOMContentLoaded', function () {
+        if (typeof CMS !== "undefined") {
+          CMS.init();
         } else {
           document.body.innerHTML = "<p style='color:red;'>CMS failed to load.</p>";
         }
