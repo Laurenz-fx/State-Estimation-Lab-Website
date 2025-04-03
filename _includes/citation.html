@@ -61,14 +61,9 @@
       
       <pre>AWARDS raw: {{ citation.awards | jsonify }}</pre>
 
-      {% if citation.awards %}
-        <div class="citation-awards">
-          <strong>DEBUG: Awards found!</strong>
-          {% for award in citation.awards %}
-            <span class="award-label">{{ award }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
+      {% assign id = include.lookup or include.citation.id or include.id %}
+      {% assign citation = site.data.citations | where_exp: "c", "c.id == id" | first %}
+
 
 
 
