@@ -8,6 +8,7 @@
   {% assign citation = include %}
 {% endif %}
 
+<pre>{{ site.data.citations | jsonify }}</pre>
 <pre>DEBUG lookup: {{ lookup }}</pre>
 <pre>DEBUG style: {{ style }}</pre>
 <pre>DEBUG include: {{ include | jsonify }}</pre>
