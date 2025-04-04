@@ -8,6 +8,8 @@
   {% assign citation = include %}
 {% endif %}
 
+<pre>{{ site.data.citations | jsonify }}</pre>
+
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" %}
