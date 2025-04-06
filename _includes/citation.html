@@ -1,3 +1,4 @@
+Hallo
 {% if include.lookup %}
   {% assign citation = site.data.citations
     | where_exp: "citation",
@@ -7,6 +8,7 @@
 {% else %}
   {% assign citation = include %}
 {% endif %}
+
 
 <pre>{{ site.data.citations | jsonify }}</pre>
 
