@@ -1,3 +1,22 @@
+{% assign real_lookup = include.lookup | default: include.id | default: include.slug %}
+
+{% if real_lookup %}
+  {% assign member = site.members
+    | where_exp: "m", "m.slug == real_lookup or m.id == real_lookup or m.name contains real_lookup"
+    | first
+  %}
+{% else %}
+  {% assign member_from_data = site.members
+    | where: "slug", include.id
+    | first
+  %}
+  {% if member_from_data %}
+    {% assign member = member_from_data %}
+  {% else %}
+    {% assign member = include %}
+  {% endif %}
+{% endif %}
+
 <div class="portrait-wrapper">
   {% if member.url %}
     <a href="{{ member.url | relative_url | uri_escape }}" class="portrait" data-style="{{ include.style }}" aria-label="{{ member.name | default: "member link" | regex_strip }}">
@@ -60,3 +79,4 @@
     </div>
   {% endif %}
 </div>
+
