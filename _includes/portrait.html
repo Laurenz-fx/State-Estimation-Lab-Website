@@ -86,6 +86,9 @@
       </span>
     {% endif %}
 
+    <h3>Debug:</h3>
+    <pre>{{ member | jsonify }}</pre>
+
     <!-- Button-Block hier direkt nach Research eingefügt -->
     {% if member.links %}
       <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
