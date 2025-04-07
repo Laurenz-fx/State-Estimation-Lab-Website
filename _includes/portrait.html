@@ -1,6 +1,8 @@
-{% if include.lookup %}
+{% assign real_lookup = include.lookup | default: include.id | default: include.slug %}
+
+{% if real_lookup %}
   {% assign member = site.members
-    | where_exp: "member", "member.slug == include.lookup"
+    | where_exp: "m", "m.slug == real_lookup or m.id == real_lookup or m.name contains real_lookup"
     | first
   %}
 {% else %}
@@ -15,7 +17,6 @@
   {% endif %}
 {% endif %}
 
-{% assign type = site.data.types[member.role] %}
 
 
 <div class="portrait-wrapper">
