@@ -18,12 +18,7 @@
 {% endif %}
 
 <div class="portrait-wrapper">
-  {% if member.url %}
-    <a href="{{ member.url | relative_url | uri_escape }}" class="portrait" data-style="{{ include.style }}" aria-label="{{ member.name | default: "member link" | regex_strip }}">
-  {% else %}
-    <div class="portrait" data-style="{{ include.style }}">
-  {% endif %}
-  
+  <div class="portrait" data-style="{{ include.style }}">
     {% if type %}
       {% include icon.html icon=type.icon %}
     {% endif %}
@@ -79,4 +74,3 @@
     </div>
   {% endif %}
 </div>
-
