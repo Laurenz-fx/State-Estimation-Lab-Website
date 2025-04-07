@@ -99,10 +99,10 @@
 }
 
 .portrait-links {
-  margin-top: 0.5rem; /* Kleiner Abstand nach oben */
+  margin-top: 0.1rem; /* Kleiner Abstand nach oben */
   display: flex;
-  justify-content: left;
-  gap: 1rem; /* Abstand zwischen den Buttons */
+  justify-content: center;
+  gap: 0.1rem; /* Abstand zwischen den Buttons */
   flex-wrap: wrap; /* Falls viele Buttons */
 }
 
