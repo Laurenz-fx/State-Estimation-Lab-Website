@@ -95,7 +95,7 @@
 .portrait-links {
   margin-top: 0.5rem; /* Kleiner Abstand nach oben */
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 1rem; /* Abstand zwischen den Buttons */
   flex-wrap: wrap; /* Falls viele Buttons */
 }
