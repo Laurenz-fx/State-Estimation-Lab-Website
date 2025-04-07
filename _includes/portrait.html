@@ -87,7 +87,10 @@
     {% endif %}
 
     <h3>Debug:</h3>
-    <pre>{{ member | jsonify }}</pre>
+    <pre>{{ member.name }}</pre>
+    <pre>{{ member.links }} </pre>
+    <pre>{{ member.role }}</pre>
+
 
     <!-- Button-Block hier direkt nach Research eingefügt -->
     {% if member.links %}
