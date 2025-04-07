@@ -5,10 +5,11 @@ nav:
   tooltip: About our team
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %} Team
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" grid=true %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" grid=true %}
-
+<div class="team-grid-wrapper">
+  {% include list.html data="members" component="portrait" filter="role == 'pi'" grid=true %}
+  {% include list.html data="members" component="portrait" filter="role != 'pi'" grid=true %}
+</div>
