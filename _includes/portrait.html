@@ -11,7 +11,7 @@
 
 <div class="portrait-wrapper">
   <a
-    {% if page.slug != member.slug %}
+    {% if member.url %}
       href="{{ member.url | relative_url | uri_escape }}"
     {% endif %}
     class="portrait"
@@ -22,23 +22,44 @@
       {% include icon.html icon=type.icon %}
     {% endif %}
 
-    <img
-      src="{{ member.image | relative_url | uri_escape }}"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {% if member.image %}
+      <img
+        src="{{ member.image | relative_url | uri_escape }}"
+        class="portrait-image"
+        alt="{{ member.name | default: "member portrait" | regex_strip }}"
+        loading="lazy"
+        {% include fallback.html %}
+      >
+    {% else %}
+      <img
+        src="/assets/images/default-portrait.png"
+        class="portrait-image"
+        alt="Default member portrait"
+        loading="lazy"
+      >
+    {% endif %}
 
     {% if member.name %}
       <span class="portrait-name">
         {{ member.name }}
       </span>
+    {% else %}
+      <span class="portrait-name">
+        No name found.
+      </span>
     {% endif %}
 
-    {% if member.role or type.research %}
+    {% if member.role %}
       <span class="portrait-role">
-        {{ member.role | default: type.research }}
+        {{ member.role }}
+      </span>
+    {% elsif type.research %}
+      <span class="portrait-role">
+        {{ type.research }}
+      </span>
+    {% else %}
+      <span class="portrait-role">
+        No role found.
       </span>
     {% endif %}
 

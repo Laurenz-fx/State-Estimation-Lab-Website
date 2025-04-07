@@ -1,17 +1,17 @@
 ---
 ---
 
-.tags {
+.awards {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-wrap: wrap;
   gap: 10px;
   max-width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
-.tag {
+.award {
   max-width: 100%;
   margin: 0;
   padding: 5px 10px;
@@ -25,10 +25,10 @@
   transition: background var(--transition), color var(--transition);
 }
 
-.tag:hover {
+.award:hover {
   background: var(--light-gray);
 }
 
-.tag[data-active] {
+.award[data-active] {
   background: var(--light-gray);
 }

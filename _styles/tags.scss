@@ -3,12 +3,12 @@
 
 .tags {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-wrap: wrap;
   gap: 10px;
   max-width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .tag {
@@ -16,7 +16,7 @@
   margin: 0;
   padding: 5px 10px;
   border-radius: 999px;
-  background: var(--secondary);
+  background: var(--tags);
   color: var(--text);
   text-decoration: none;
   overflow: hidden;

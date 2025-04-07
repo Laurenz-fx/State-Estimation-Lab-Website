@@ -1,16 +1,21 @@
-<p>Hallo</p>
 {% if include.lookup %}
   {% assign citation = site.data.citations
     | where_exp: "citation",
       "citation.id == include.lookup or citation.doi == include.lookup or citation.title contains include.lookup"
     | first
   %}
-{% else %}
-  {% assign citation = include %}
-{% endif %}
+  {% else %}
 
-
-<pre>{{ site.data.citations | jsonify }}</pre>
+    {% assign citation_from_data = site.data.citations 
+      | where: "id", include.id 
+      | first 
+    %}
+    {% if citation_from_data %}
+    {% assign citation = citation_from_data %}
+    {% else %}
+      {% assign citation = include %}
+    {% endif %}
+  {% endif %}
 
 <div class="citation-container">
   <div class="citation">
@@ -62,6 +67,15 @@
           | default: "[no author info]"
         }}
       </div>
+
+      {% if citation.awards.size > 0 or citation.repo %}
+        <div class="citation-awards">
+          {% include awards.html awards=citation.awards repo=citation.repo %}
+        </div>
+      {% else %}
+        <p>No award found</p>
+      {% endif %}
+
 
       <div class="citation-details">
         <span class="citation-publisher">
