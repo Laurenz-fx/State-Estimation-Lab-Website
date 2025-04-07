@@ -26,8 +26,7 @@
   {% for d in data %}
     {% assign style = d.style | default: include.style %}
 
-    {%
-      include {{ include.component | append: ".html" }}
+    {% include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
       author=d.author
       authors=d.authors
