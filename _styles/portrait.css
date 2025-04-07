@@ -1,10 +1,15 @@
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 2rem;
   justify-items: center;
   align-items: start;
   padding: 2rem;
+}
+
+.team-member {
+  width: 100%;
+  max-width: 250px;
 }
 
 .portrait-wrapper {
