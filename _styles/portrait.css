@@ -100,7 +100,7 @@
 .portrait-links {
   margin-top: 0.2rem; /* angenehmer kleiner Abstand */
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 0.5rem; /* schöner gleichmäßiger Abstand */
   flex-wrap: wrap;
 }
