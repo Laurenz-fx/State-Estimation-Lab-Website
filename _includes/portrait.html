@@ -1,7 +1,19 @@
-{% assign member = site.members
-  | where_exp: "member", "member.slug == include.lookup"
-     first
-%}
+{% if include.lookup %}
+  {% assign member = site.members
+    | where_exp: "member", "member.slug == include.lookup"
+    | first
+  %}
+{% else %}
+  {% assign member_from_data = site.members
+    | where: "slug", include.id
+    | first
+  %}
+  {% if member_from_data %}
+    {% assign member = member_from_data %}
+  {% else %}
+    {% assign member = include %}
+  {% endif %}
+{% endif %}
 
 {% assign type = site.data.types[member.role] %}
 
