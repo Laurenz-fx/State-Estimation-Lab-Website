@@ -1,16 +1,25 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+  padding: 2rem;
+}
+
 .portrait-wrapper {
   display: contents;
 }
 
 .portrait {
   position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin: 20px;
   width: 175px;
-  max-width: calc(100% - 20px - 20px);
+  max-width: calc(100% - 40px);
   text-decoration: none;
 }
 
@@ -68,9 +77,9 @@
   font-weight: var(--semi-bold);
 }
 
-.portrait[data-style=tiny] .portrait-role,
-.portrait[data-style=tiny] .portrait-research {
-  display: none;
+.portrait-role {
+  font-size: small;
+  opacity: 90%;
 }
 
 .portrait-research {
@@ -78,9 +87,17 @@
   font-size: small;
 }
 
-.portrait-role {
-  font-size: small;
-  opacity: 90%;
+.portrait[data-style=tiny] .portrait-role,
+.portrait[data-style=tiny] .portrait-research {
+  display: none;
+}
+
+/* --- Buttons unter dem Member --- */
+.portrait-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0.75em;
 }
 
 /*# sourceMappingURL=portrait.css.map */
