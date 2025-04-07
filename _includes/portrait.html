@@ -76,5 +76,22 @@
         No research found.
       </span>
     {% endif %}
+
+    <!-- Button-Block hier direkt nach Research eingefügt -->
+    {% if member.links %}
+      <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
+        {% for link in member.links %}
+          {% assign key = link[0] %}
+          {% assign value = link[1] %}
+          {% include button.html type=key link=value style="bare" %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p style="color: red; text-align: center; margin-top: 10px;">
+        ⚠️ No links found for this member!
+      </p>
+    {% endif %}
+    <!-- Ende Button-Block -->
+    
   </a>
 </div>
