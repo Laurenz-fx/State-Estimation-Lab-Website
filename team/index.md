@@ -9,5 +9,6 @@ nav:
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+{% include list.html data="members" component="portrait" filter="role == 'pi'" grid=true %}
+{% include list.html data="members" component="portrait" filter="role != 'pi'" grid=true %}
+
