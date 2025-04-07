@@ -17,66 +17,67 @@
   {% endif %}
 {% endif %}
 
-<div class="portrait-wrapper">
-  {% if member.url %}
-    <a href="{{ member.url | relative_url | uri_escape }}" class="portrait" data-style="{{ include.style }}" aria-label="{{ member.name | default: "member link" | regex_strip }}">
-  {% else %}
-    <div class="portrait" data-style="{{ include.style }}">
-  {% endif %}
-  
-    {% if type %}
-      {% include icon.html icon=type.icon %}
-    {% endif %}
-
-    {% if member.image %}
-      <img
-        src="{{ member.image | relative_url | uri_escape }}"
-        class="portrait-image"
-        alt="{{ member.name | default: "member portrait" | regex_strip }}"
-        loading="lazy"
-        {% include fallback.html %}
-      >
+<div class="team-member">
+  <div class="portrait-wrapper">
+    {% if member.url %}
+      <a href="{{ member.url | relative_url | uri_escape }}" class="portrait" data-style="{{ include.style }}" aria-label="{{ member.name | default: "member link" | regex_strip }}">
     {% else %}
-      <img
-        src="/assets/images/default-portrait.png"
-        class="portrait-image"
-        alt="Default member portrait"
-        loading="lazy"
-      >
+      <div class="portrait" data-style="{{ include.style }}">
     {% endif %}
+    
+      {% if type %}
+        {% include icon.html icon=type.icon %}
+      {% endif %}
 
-    {% if member.name %}
-      <span class="portrait-name">
-        {{ member.name }}
-      </span>
-    {% endif %}
+      {% if member.image %}
+        <img
+          src="{{ member.image | relative_url | uri_escape }}"
+          class="portrait-image"
+          alt="{{ member.name | default: "member portrait" | regex_strip }}"
+          loading="lazy"
+          {% include fallback.html %}
+        >
+      {% else %}
+        <img
+          src="/assets/images/default-portrait.png"
+          class="portrait-image"
+          alt="Default member portrait"
+          loading="lazy"
+        >
+      {% endif %}
 
-    {% if member.role %}
-      <span class="portrait-role">
-        {{ member.role }}
-      </span>
-    {% endif %}
+      {% if member.name %}
+        <span class="portrait-name">
+          {{ member.name }}
+        </span>
+      {% endif %}
 
-    {% if member.research %}
-      <span class="portrait-research">
-        {{ member.research }}
-      </span>
-    {% endif %}
+      {% if member.role %}
+        <span class="portrait-role">
+          {{ member.role }}
+        </span>
+      {% endif %}
 
-    {% if member.links %}
-      <div class="portrait-links">
-        {% for link in member.links %}
-          {% assign key = link[0] %}
-          {% assign value = link[1] %}
-          {% include button.html type=key link=value style="bare" text="" %}
-        {% endfor %}
+      {% if member.research %}
+        <span class="portrait-research">
+          {{ member.research }}
+        </span>
+      {% endif %}
+
+      {% if member.links %}
+        <div class="portrait-links">
+          {% for link in member.links %}
+            {% assign key = link[0] %}
+            {% assign value = link[1] %}
+            {% include button.html type=key link=value style="bare" text="" %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    {% if member.url %}
+      </a>
+    {% else %}
       </div>
     {% endif %}
-
-  {% if member.url %}
-    </a>
-  {% else %}
-    </div>
-  {% endif %}
+  </div>
 </div>
-
