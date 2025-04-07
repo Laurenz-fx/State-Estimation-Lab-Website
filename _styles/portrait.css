@@ -87,22 +87,23 @@
   opacity: 90%;
 }
 
-.portrait-research {
-  opacity: 90%;
-  font-size: small;
-}
-
 .portrait[data-style=tiny] .portrait-role,
 .portrait[data-style=tiny] .portrait-research {
   display: none;
 }
 
-/* --- Buttons unter dem Member --- */
 .portrait-links {
+  margin-top: 0.5rem; /* Kleiner Abstand nach oben */
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 0.75em;
+  gap: 1rem; /* Abstand zwischen den Buttons */
+  flex-wrap: wrap; /* Falls viele Buttons */
+}
+
+.portrait-research {
+  margin-bottom: 0;
+  opacity: 90%;
+  font-size: small;
 }
 
 /*# sourceMappingURL=portrait.css.map */
