@@ -98,10 +98,10 @@
 }
 
 .portrait-links {
-  margin-top: 0.2rem; /* angenehmer kleiner Abstand */
+  margin-top: 0.2rem;
   display: flex;
-  justify-content: right;
-  gap: 0.5rem; /* schöner gleichmäßiger Abstand */
+  justify-content: center;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
