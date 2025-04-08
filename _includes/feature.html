@@ -3,26 +3,29 @@
   {% if include.flip %}
     data-flip
   {% endif %}
+  style="display: flex; flex-direction: column; align-items: center; text-align: center;"
 >
-  <div class="feature-wrapper">
-    {% if include.title %}
-      <p class="feature-title">{{ include.title }}</p>
+  {% if include.title %}
+    <p style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px;">
+      {{ include.title }}
+    </p>
+  {% endif %}
+  <a
+    {% if include.link %}
+      href="{{ include.link | relative_url | uri_escape }}"
     {% endif %}
-    <a
-      {% if include.link %}
-        href="{{ include.link | relative_url | uri_escape }}"
-      {% endif %}
-      class="feature-image"
-      aria-label="{{ include.title | default: "feature link" | regex_strip }}"
+    class="feature-image"
+    aria-label="{{ include.title | default: "feature link" | regex_strip }}"
+    style="display: block;"
+  >
+    <img
+      src="{{ include.image | relative_url | uri_escape }}"
+      loading="lazy"
+      alt="{{ include.title | default: "feature image" | regex_strip }}"
+      {% include fallback.html %}
+      style="max-width: 300px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
     >
-      <img
-        src="{{ include.image | relative_url | uri_escape }}"
-        loading="lazy"
-        alt="{{ include.title | default: "feature image" | regex_strip }}"
-        {% include fallback.html %}
-      >
-    </a>
-  </div>
+  </a>
   <div class="feature-text">
     {{ include.text | markdownify }}
   </div>
