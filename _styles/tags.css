@@ -23,7 +23,7 @@
 }
 
 .tag:hover {
-  filter: brightness(85%);
+  filter: brightness(75%);
 }
 
 .tag[data-active] {
