@@ -21,10 +21,6 @@
   <div class="portrait-wrapper">
 
     <div class="portrait" data-style="{{ include.style }}">
-      {% if member.url %}
-        <a href="{{ member.url | relative_url | uri_escape }}" aria-label="{{ member.name | default: "member link" | regex_strip }}">
-      {% endif %}
-
       {% if type %}
         {% include icon.html icon=type.icon %}
       {% endif %}
