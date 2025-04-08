@@ -54,8 +54,8 @@
 .citation-title {
   font-weight: var(--semi-bold);
   font-size: larger;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .citation-text > .icon {
@@ -66,20 +66,20 @@
   opacity: 0.5;
   font-size: 30px;
   z-index: -1;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .citation-publisher {
   text-transform: capitalize;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .citation-description {
   color: var(--gray);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .citation-buttons {
@@ -89,15 +89,15 @@
 }
 
 .citation-buttons .button {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .citation-text > .tags {
   display: flex;
   justify-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   gap: 0.5px;
 }
 
@@ -114,23 +114,23 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   gap: 0.5px;
 }
 
 .citation-awards {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .citation-awards-conferences {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  gap: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .award, .conference {
@@ -143,8 +143,8 @@
   text-decoration: none;
   white-space: nowrap;
   transition: background-color var(--transition), color var(--transition);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .award:hover, .conference:hover {
