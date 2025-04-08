@@ -99,26 +99,23 @@
 }
 
 .portrait-links {
-  margin-top: 0.5rem; // A smaller gap above
-  display: flex;
-  justify-content: center; // Center horizontally
-  align-items: center; // Center vertically
-  gap: 0.5rem; // Smaller gap between icons
-  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  text-align: center; // NEW: center child elements as inline elements
 }
 
 .portrait-links a {
-  display: flex;
+  display: inline-flex; // NEW: behave like inline elements + flexbox
   justify-content: center;
   align-items: center;
-  width: 32px; // Smaller clickable area
+  width: 32px;
   height: 32px;
+  margin: 0 0.25rem; // Small horizontal gap
   text-decoration: none;
 }
 
 .portrait-links a i,
 .portrait-links a svg {
-  font-size: 18px; // Smaller icon size
+  font-size: 18px;
 }
 
 .portrait[data-style="tiny"] {
