@@ -58,11 +58,13 @@ nav {
 }
 
 nav > a {
+  color: var(--text);
+  transition: filter 0.3s ease;
   padding: 5px;
 }
 
 nav > a:hover {
-  color: var(--primary);
+  filter: brightness(85%);
 }
 
 @media (max-width: 700px) {
