@@ -10,14 +10,14 @@ The RSE-Lab was established in 2001. We are interested in the development of com
 <div class="highlights">
   <div class="highlight-item">
     <h3>Our Research</h3>
-    <a href="{{ '/research' | relative_url }}" class="button" data-style="bare">
+    <a href="{{ '/research' | relative_url }}" class="button" data-style="bare" flip=true>
       <img src="{{ 'images/fallback.png' | relative_url }}" alt="Our Research">
     </a>
   </div>
 
   <div class="highlight-item">
     <h3>Our Team</h3>
-    <a href="{{ '/team' | relative_url }}" class="button" data-style="bare">
+    <a href="{{ '/team' | relative_url }}" class="button" data-style="bare" flip=true>
       <img src="{{ 'images/team.png' | relative_url }}" alt="Our Team">
     </a>
   </div>
