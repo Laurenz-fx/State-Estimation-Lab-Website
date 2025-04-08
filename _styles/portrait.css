@@ -100,6 +100,7 @@
 .portrait-links {
   margin-top: 0.5rem;
   text-align: center;
+  transform: translateX(-6px);
 }
 
 .portrait-links a {
