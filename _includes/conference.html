@@ -1,0 +1,23 @@
+{% assign conferences = include.conferences %}
+{% assign link = include.link | default: page.dir %}
+{% if conferences.size > 0 or include.repo %}
+  <div
+    class="conferences"
+    {% if include.repo %}
+      data-repo="{{ include.repo | xml_escape }}"
+    {% endif %}
+    {% if link %}
+      data-link="{{ link | relative_url | xml_escape }}"
+    {% endif %}
+  >
+    {% for conference in conferences %}
+      <a
+        href="https://laurenz-fx.github.io/State-Estimation-Lab-Website/research/?search=+{{ conference | downcase | uri_escape }}"
+        class="conference"
+        data-tooltip="Search for '{{ conference }}'"
+      >
+        {{ conference }}
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

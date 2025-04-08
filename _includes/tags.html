@@ -5,7 +5,6 @@
   | split: ","
   | array_filter
   | join: ","
-  | regex_replace: "\s+", "-"
   | split: ","
   | uniq
 %}
@@ -22,9 +21,9 @@
   >
     {% for tag in tags %}
       <a
-        href="{{ link }}?search=&quot;tag: {{ tag }}&quot;"
+        href="https://laurenz-fx.github.io/State-Estimation-Lab-Website/research/?search=+{{ tag | uri_escape }}"
         class="tag"
-        data-tooltip="Show items with the tag &quot;{{ tag }}&quot;"
+        data-tooltip="Search for '{{ tag }}'"
       >
         {{ tag }}
       </a>

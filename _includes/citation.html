@@ -68,11 +68,22 @@
         }}
       </div>
 
-      {% if citation.awards.size > 0 or citation.repo %}
-        <div class="citation-awards">
-          {% include awards.html awards=citation.awards repo=citation.repo %}
+      {% if citation.awards.size > 0 or citation.conferences.size > 0 %}
+        <div class="citation-awards-conferences">
+          {% if citation.awards.size > 0 %}
+            <div class="citation-awards">
+              {% include awards.html awards=citation.awards repo=citation.repo %}
+            </div>
+          {% endif %}
+
+          {% if citation.conferences.size > 0 %}
+            <div class="citation-conferences">
+              {% include conferences.html conferences=citation.conferences repo=citation.repo %}
+            </div>
+          {% endif %}
         </div>
       {% endif %}
+
 
 
       <div class="citation-details">
