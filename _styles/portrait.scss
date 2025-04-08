@@ -100,8 +100,10 @@
 
 .portrait-links {
   margin-top: 0.5rem;
-  text-align: center; // NEW: center child elements as inline elements
+  text-align: center;
+  transform: translateX(-6px); // move slightly to the left
 }
+
 
 .portrait-links a {
   display: inline-flex; // NEW: behave like inline elements + flexbox
