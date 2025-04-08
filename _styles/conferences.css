@@ -16,7 +16,7 @@
   margin: 0;
   padding: 5px 10px;
   border-radius: 999px;
-  background: var(--conferences);
+  background: var(--primary);
   color: var(--text);
   text-decoration: none;
   overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .conference:hover {
-  filter: brightness(75%);
+  filter: brightness(85%);
 }
 
 .conference[data-active] {
