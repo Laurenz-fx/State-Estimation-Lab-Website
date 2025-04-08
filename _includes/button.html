@@ -5,7 +5,8 @@
   <div class="button-wrapper">
     <a
       class="button"
-      href="{{ button.link | replace: "$LINK", button.link | relative_url }}" target="_blank"
+      href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+      {% if include.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
       {% if button.tooltip %}
         data-tooltip="{{ button.tooltip | xml_escape }}"
       {% endif %}
@@ -22,4 +23,3 @@
     </a>
   </div>
 {% endif %}
-
