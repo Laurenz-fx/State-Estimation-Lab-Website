@@ -92,18 +92,17 @@
   .citation {
     flex-direction: column;
   }
-
   .citation-image {
     width: unset;
     height: 180px;
   }
 }
-
 .citation-tags {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  gap: 0.5px;
 }
 
 .citation-awards {
@@ -132,9 +131,7 @@
 }
 
 .award:hover, .conference:hover {
-  background-color: rgba(var(--secondary-rgb), 0.75);
+  filter: brightness(85%);
 }
 
-.conference[data-active] {
-  background-color: rgba(var(--secondary-rgb), 0.75);
-}
+/*# sourceMappingURL=citation.css.map */
