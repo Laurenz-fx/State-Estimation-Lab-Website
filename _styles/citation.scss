@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.5px;
   max-width: 100%;
   height: min-content;
   padding: 20px;
@@ -42,11 +42,9 @@
 
 .citation-title,
 .citation-authors,
-.citation-awards-conferences,
+.citation-awards,
 .citation-details,
-.citation-description,
-.citation-buttons,
-.citation-tags {
+.citation-description {
   width: 100%;
 }
 
@@ -73,40 +71,21 @@
   color: var(--gray);
 }
 
-.citation-awards-conferences,
-.citation-buttons,
-.citation-tags {
+.citation-buttons {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 5px;
-  margin: 0;
-}
-
-.award, .conference {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px;
-  border-radius: 999px;
-  color: var(--text);
-  text-decoration: none;
-  white-space: nowrap;
-  background: var(--award);
-  transition: background-color var(--transition), color var(--transition), transform var(--transition);
-}
-
-.conference {
-  background: var(--secondary);
-}
-
-.award:hover, .conference:hover {
-  filter: brightness(90%);
-  transform: scale(1.02);
+  gap: 0.5px;
 }
 
 .citation-buttons .button {
   margin: 0;
+}
+
+.citation-text > .tags {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  gap: 0.5px;
 }
 
 @container (max-width: 800px) {
@@ -118,4 +97,44 @@
     width: unset;
     height: 180px;
   }
+}
+
+.citation-tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.citation-awards {
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+}
+
+.citation-awards-conferences {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5px;
+  margin-top: 5px;
+}
+
+.award, .conference {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.award:hover, .conference:hover {
+  background-color: rgba(var(--secondary-rgb), 0.75);
+}
+
+.conference[data-active] {
+  background-color: rgba(var(--secondary-rgb), 0.75);
 }
