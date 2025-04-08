@@ -99,12 +99,28 @@
 }
 
 .portrait-links {
-  margin-top: 0.2rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  margin-top: 0.8rem; // Adds space above the icons
+  display: flex; // Flex container to arrange links horizontally
+  justify-content: center; // Center the icons horizontally
+  align-items: center; // Center the icons vertically
+  gap: 1rem; // Space between icons
+  flex-wrap: wrap; // Allow wrapping on small screens
 }
+
+.portrait-links a {
+  display: flex; // Make each link a flex container
+  justify-content: center; // Center the icon inside the link horizontally
+  align-items: center; // Center the icon inside the link vertically
+  width: 40px; // Fixed width for each link
+  height: 40px; // Fixed height for each link
+  text-decoration: none; // Remove underline from links
+}
+
+.portrait-links a i,
+.portrait-links a svg {
+  font-size: 24px; // Standard size for all icons
+}
+
 
 .portrait[data-style="tiny"] {
   .portrait-role,
