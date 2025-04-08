@@ -1,9 +1,3 @@
----
----
-
-$thumb-size: 180px;
-$wrap: 800px;
-
 .citation-container {
   container-type: inline-size;
 }
@@ -19,7 +13,7 @@ $wrap: 800px;
 
 .citation-image {
   position: relative;
-  width: $thumb-size;
+  width: 180px;
   flex-shrink: 0;
 }
 
@@ -36,7 +30,7 @@ $wrap: 800px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 0.5px;
+  gap: 10px;
   max-width: 100%;
   height: min-content;
   padding: 20px;
@@ -48,9 +42,11 @@ $wrap: 800px;
 
 .citation-title,
 .citation-authors,
-.citation-awards,
+.citation-awards-conferences,
 .citation-details,
-.citation-description {
+.citation-description,
+.citation-buttons,
+.citation-tags {
   width: 100%;
 }
 
@@ -77,53 +73,14 @@ $wrap: 800px;
   color: var(--gray);
 }
 
-.citation-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5px;
-}
-
-.citation-buttons .button {
-  margin: 0;
-}
-
-.citation-text > .tags {
-  display: flex;
-  justify-content: flex-start;
-  margin: 0;
-  gap: 0.5px;
-}
-
-@container (max-width: #{$wrap}) {
-  .citation {
-    flex-direction: column;
-  }
-
-  .citation-image {
-    width: unset;
-    height: $thumb-size;
-  }
-}
-
+.citation-awards-conferences,
+.citation-buttons,
 .citation-tags {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin: 0;
-  gap: 0.5px;
-}
-
-.citation-awards {
-  margin-top: 0.5px;
-  margin-bottom: 0.5px;
-}
-
-.citation-awards-conferences {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5px;
-  margin-top: 5px;
+  gap: 5px;
+  margin: 0;
 }
 
 .award, .conference {
@@ -135,9 +92,30 @@ $wrap: 800px;
   color: var(--text);
   text-decoration: none;
   white-space: nowrap;
-  transition: background-color var(--transition), color var(--transition);
+  background: var(--award);
+  transition: background-color var(--transition), color var(--transition), transform var(--transition);
+}
+
+.conference {
+  background: var(--secondary);
 }
 
 .award:hover, .conference:hover {
-  filter: brightness(85%);
+  filter: brightness(90%);
+  transform: scale(1.02);
+}
+
+.citation-buttons .button {
+  margin: 0;
+}
+
+@container (max-width: 800px) {
+  .citation {
+    flex-direction: column;
+  }
+
+  .citation-image {
+    width: unset;
+    height: 180px;
+  }
 }
