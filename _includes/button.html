@@ -7,7 +7,7 @@
       class="button"
       href="{{ button.link | replace: '$LINK', button.link | relative_url }}"
       {% unless button.link contains '://' or button.link contains 'http' %}
-        {# Internal link - no target blank #}
+        {% comment %} Internal link - no target blank {% endcomment %}
       {% else %}
         target="_blank" rel="noopener noreferrer"
       {% endunless %}
