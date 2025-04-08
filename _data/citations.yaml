@@ -234,9 +234,10 @@
   tags:
   - behaviour cloning
   - vision language action
-  - ICRA 2025
   awards:
   - Best Paper
+  conferences:
+  - ICRA 2025
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.1703.01656
@@ -247,7 +248,1315 @@
   publisher: arXiv
   date: '2017-01-01'
   link: https://doi.org/g88vrf
-  tags:
-  - behaviour cloning
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2501.18564
+  title: 'SAM2Act: Integrating Visual Foundation Model with A Memory Architecture
+    for Robotic Manipulation'
+  authors:
+  - Haoquan Fang
+  - Markus Grotz
+  - Wilbert Pumacay
+  - Yi Ru Wang
+  - Dieter Fox
+  - Ranjay Krishna
+  - Jiafei Duan
+  publisher: arXiv
+  date: '2025-01-01'
+  link: https://doi.org/g88mbq
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2411.19309
+  title: 'GRAPE: Generalizing Robot Policy via Preference Alignment'
+  authors:
+  - Zijian Zhang
+  - Kaiyuan Zheng
+  - Zhaorun Chen
+  - Joel Jang
+  - Yi Li
+  - Siwei Han
+  - Chaoqi Wang
+  - Mingyu Ding
+  - Dieter Fox
+  - Huaxiu Yao
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g87dq8
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2410.11758
+  title: Latent Action Pretraining from Videos
+  authors:
+  - Seonghyeon Ye
+  - Joel Jang
+  - Byeongguk Jeon
+  - Sejune Joo
+  - Jianwei Yang
+  - Baolin Peng
+  - Ajay Mandlekar
+  - Reuben Tan
+  - Yu-Wei Chao
+  - Bill Yuchen Lin
+  - Lars Liden
+  - Kimin Lee
+  - Jianfeng Gao
+  - Luke Zettlemoyer
+  - Dieter Fox
+  - Minjoon Seo
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88qtk
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3654777.3676413
+  title: 'EVE: Enabling Anyone to Train Robots using Augmented Reality'
+  authors:
+  - Jun Wang
+  - Chun-Cheng Chang
+  - Jiafei Duan
+  - Dieter Fox
+  - Ranjay Krishna
+  publisher: Proceedings of the 37th Annual ACM Symposium on User Interface Software
+    and Technology
+  date: '2024-10-11'
+  link: https://doi.org/g8756w
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2410.00371
+  title: 'AHA: A Vision-Language-Model for Detecting and Reasoning Over Failures in
+    Robotic Manipulation'
+  authors:
+  - Jiafei Duan
+  - Wilbert Pumacay
+  - Nishanth Kumar
+  - Yi Ru Wang
+  - Shulin Tian
+  - Wentao Yuan
+  - Ranjay Krishna
+  - Dieter Fox
+  - Ajay Mandlekar
+  - Yijie Guo
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88qtp
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2409.19494
+  title: 'OptiGrasp: Optimized Grasp Pose Detection Using RGB Images for Warehouse
+    Picking Robots'
+  authors:
+  - Soofiyan Atar
+  - Yi Li
+  - Markus Grotz
+  - Michael Wolf
+  - Dieter Fox
+  - Joshua Smith
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88qtq
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-031-73024-5_16
+  title: "Learning to\_Build by\_Building Your Own Instructions"
+  authors:
+  - Aaron Walsman
+  - Muru Zhang
+  - Adam Fishman
+  - Ali Farhadi
+  - Dieter Fox
+  publisher: Lecture Notes in Computer Science
+  date: '2024-11-24'
+  link: https://doi.org/g87577
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2406.18915
+  title: 'Manipulate-Anything: Automating Real-World Robots using Vision-Language
+    Models'
+  authors:
+  - Jiafei Duan
+  - Wentao Yuan
+  - Wilbert Pumacay
+  - Yi Ru Wang
+  - Kiana Ehsani
+  - Dieter Fox
+  - Ranjay Krishna
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88qtz
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2406.10721
+  title: 'RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for
+    Robotics'
+  authors:
+  - Wentao Yuan
+  - Jiafei Duan
+  - Valts Blukis
+  - Wilbert Pumacay
+  - Ranjay Krishna
+  - Adithyavairavan Murali
+  - Arsalan Mousavian
+  - Dieter Fox
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88qt3
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2407.00278
+  title: 'PerAct2: Benchmarking and Learning for Robotic Bimanual Manipulation Tasks'
+  authors:
+  - Markus Grotz
+  - Mohit Shridhar
+  - Tamim Asfour
+  - Dieter Fox
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88qf6
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2405.11656
+  title: 'URDFormer: A Pipeline for Constructing Articulated Simulation Environments
+    from Real-World Images'
+  authors:
+  - Zoey Chen
+  - Aaron Walsman
+  - Marius Memmel
+  - Kaichun Mo
+  - Alex Fang
+  - Karthikeya Vemuri
+  - Alan Wu
+  - Dieter Fox
+  - Abhishek Gupta
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88q6q
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2404.12308
+  title: 'ASID: Active Exploration for System Identification in Robotic Manipulation'
+  authors:
+  - Marius Memmel
+  - Andrew Wagenmaker
+  - Chuning Zhu
+  - Patrick Yin
+  - Dieter Fox
+  - Abhishek Gupta
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88q6r
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2402.08191
+  title: 'THE COLOSSEUM: A Benchmark for Evaluating Generalization for Robotic Manipulation'
+  authors:
+  - Wilbert Pumacay
+  - Ishika Singh
+  - Jiafei Duan
+  - Ranjay Krishna
+  - Jesse Thomason
+  - Dieter Fox
+  publisher: arXiv
+  date: '2024-01-01'
+  link: https://doi.org/g88q6s
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=nIU0ZFmptX
+  title: 'PerAct2: Benchmarking and Learning for Robotic Bimanual Manipulation Tasks'
+  authors:
+  - Markus Grotz
+  - Mohit Shridhar
+  - Yu-Wei Chao
+  - Tamim Asfour
+  - Dieter Fox
+  publisher: ''
+  date: '2024-11-08'
+  link: https://openreview.net/forum?id=nIU0ZFmptX
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2311.02337
+  title: 'STOW: Discrete-Frame Segmentation and Tracking of Unseen Objects for Warehouse
+    Picking Robots'
+  authors:
+  - Yi Li
+  - Muru Zhang
+  - Markus Grotz
+  - Kaichun Mo
+  - Dieter Fox
+  publisher: arXiv
+  date: '2023-01-01'
+  link: https://doi.org/g88q6t
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2311.00926
+  title: 'M2T2: Multi-Task Masked Transformer for Object-centric Pick and Place'
+  authors:
+  - Wentao Yuan
+  - Adithyavairavan Murali
+  - Arsalan Mousavian
+  - Dieter Fox
+  publisher: arXiv
+  date: '2023-01-01'
+  link: https://doi.org/g88q6v
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2310.17274
+  title: 'cuRobo: Parallelized Collision-Free Minimum-Jerk Robot Motion Generation'
+  authors:
+  - Balakumar Sundaralingam
+  - Siva Kumar Sastry Hari
+  - Adam Fishman
+  - Caelan Garrett
+  - Karl Van Wyk
+  - Valts Blukis
+  - Alexander Millane
+  - Helen Oleynikova
+  - Ankur Handa
+  - Fabio Ramos
+  - Nathan Ratliff
+  - Dieter Fox
+  publisher: arXiv
+  date: '2023-01-01'
+  link: https://doi.org/g88q6w
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=dsw5CNOVn1
+  title: 'URDFormer: Constructing interactive Realistic Scenes from Real Images via
+    Simulation and Generative Modeling'
+  authors:
+  - Qiuyu Chen
+  - Marius Memmel
+  - Alex Fang
+  - Aaron Walsman
+  - Dieter Fox
+  - Abhishek Gupta
+  publisher: ''
+  date: '2023-10-13'
+  link: https://openreview.net/forum?id=dsw5CNOVn1
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2310.07018
+  title: 'NEWTON: Are Large Language Models Capable of Physical Reasoning?'
+  authors:
+  - Yi Ru Wang
+  - Jiafei Duan
+  - Dieter Fox
+  - Siddhartha Srinivasa
+  publisher: arXiv
+  date: '2023-01-01'
+  link: https://doi.org/g88q6x
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2306.13818
+  title: AR2-D2:Training a Robot Without a Robot
+  authors:
+  - Jiafei Duan
+  - Yi Ru Wang
+  - Mohit Shridhar
+  - Dieter Fox
+  - Ranjay Krishna
+  publisher: arXiv
+  date: '2023-01-01'
+  link: https://doi.org/g88q6z
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA48891.2023.10160765
+  title: 'CuRobo: Parallelized Collision-Free Robot Motion Generation'
+  authors:
+  - Balakumar Sundaralingam
+  - Siva Kumar Sastry Hari
+  - Adam Fishman
+  - Caelan Garrett
+  - Karl Van Wyk
+  - Valts Blukis
+  - Alexander Millane
+  - Helen Oleynikova
+  - Ankur Handa
+  - Fabio Ramos
+  - Nathan Ratliff
+  - Dieter Fox
+  publisher: 2023 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2023-05-29'
+  link: https://doi.org/g8752t
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA48891.2023.10161528
+  title: 'CabiNet: Scaling Neural Collision Detection for Object Rearrangement with
+    Procedural Scene Generation'
+  authors:
+  - Adithyavairavan Murali
+  - Arsalan Mousavian
+  - Clemens Eppner
+  - Adam Fishman
+  - Dieter Fox
+  publisher: 2023 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2023-05-29'
+  link: https://doi.org/g87536
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2303.15771
+  title: 'TerrainNet: Visual Modeling of Complex Terrain for High-speed, Off-road
+    Navigation'
+  authors:
+  - Xiangyun Meng
+  - Nathan Hatch
+  - Alexander Lambert
+  - Anqi Li
+  - Nolan Wagener
+  - Matthew Schmittle
+  - JoonHo Lee
+  - Wentao Yuan
+  - Zoey Chen
+  - Samuel Deng
+  - Greg Okopal
+  - Dieter Fox
+  - Byron Boots
+  - Amirreza Shaban
+  publisher: arXiv
+  date: '2023-01-01'
+  link: https://doi.org/g88q62
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=aQnn9cIVTRJ
+  title: Motion Policy Networks
+  authors:
+  - Adam Fishman
+  - Adithyavairavan Murali
+  - Clemens Eppner
+  - Bryan Peele
+  - Byron Boots
+  - Dieter Fox
+  publisher: ''
+  date: '2022-08-15'
+  link: https://openreview.net/forum?id=aQnn9cIVTRJ
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=PS_eCS_WCvD
+  title: 'Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation'
+  authors:
+  - Mohit Shridhar
+  - Lucas Manuelli
+  - Dieter Fox
+  publisher: ''
+  date: '2022-08-15'
+  link: https://openreview.net/forum?id=PS_eCS_WCvD
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2210.13638
+  title: Learning Robust Real-World Dexterous Grasping Policies via Implicit Shape
+    Augmentation
+  authors:
+  - Zoey Qiuyu Chen
+  - Karl Van Wyk
+  - Yu-Wei Chao
+  - Wei Yang
+  - Arsalan Mousavian
+  - Abhishek Gupta
+  - Dieter Fox
+  publisher: arXiv
+  date: '2022-01-01'
+  link: https://doi.org/g88q63
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-031-19815-1_6
+  title: "Break and\_Make: Interactive Structural Understanding Using LEGO Bricks"
+  authors:
+  - Aaron Walsman
+  - Muru Zhang
+  - Klemen Kotar
+  - Karthik Desingh
+  - Ali Farhadi
+  - Dieter Fox
+  publisher: Lecture Notes in Computer Science
+  date: '2022-01-01'
+  link: https://doi.org/g8755h
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2209.14284
+  title: 'DexTransfer: Real World Multi-fingered Dexterous Grasping with Minimal Human
+    Demonstrations'
+  authors:
+  - Zoey Qiuyu Chen
+  - Karl Van Wyk
+  - Yu-Wei Chao
+  - Wei Yang
+  - Arsalan Mousavian
+  - Abhishek Gupta
+  - Dieter Fox
+  publisher: arXiv
+  date: '2022-01-01'
+  link: https://doi.org/g88q64
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA46639.2022.9812302
+  title: 'HandoverSim: A Simulation Framework and Benchmark for Human-to-Robot Object
+    Handovers'
+  authors:
+  - Yu-Wei Chao
+  - Chris Paxton
+  - Yu Xiang
+  - Wei Yang
+  - Balakumar Sundaralingam
+  - Tao Chen
+  - Adithyavairavan Murali
+  - Maya Cakmak
+  - Dieter Fox
+  publisher: 2022 International Conference on Robotics and Automation (ICRA)
+  date: '2022-05-23'
+  link: https://doi.org/g8754d
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/LRA.2022.3143311
+  title: 'Geometric Fabrics: Generalizing Classical Mechanics to Capture the Physics
+    of Behavior'
+  authors:
+  - Karl Van Wyk
+  - Mandy Xie
+  - Anqi Li
+  - Muhammad Asif Rana
+  - Buck Babich
+  - Bryan Peele
+  - Qian Wan
+  - Iretiayo Akinola
+  - Balakumar Sundaralingam
+  - Dieter Fox
+  - Byron Boots
+  - Nathan D. Ratliff
+  publisher: IEEE Robotics and Automation Letters
+  date: '2022-04-01'
+  link: https://doi.org/g8752z
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/LRA.2022.3143198
+  title: Hierarchical Policies for Cluttered-Scene Grasping With Latent Plans
+  authors:
+  - Lirui Wang
+  - Xiangyun Meng
+  - Yu Xiang
+  - Dieter Fox
+  publisher: IEEE Robotics and Automation Letters
+  date: '2022-04-01'
+  link: https://doi.org/g8753n
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/LRA.2022.3142441
+  title: 'iCaps: Iterative Category-Level Object Pose and Shape Estimation'
+  authors:
+  - Xinke Deng
+  - Junyi Geng
+  - Timothy Bretl
+  - Yu Xiang
+  - Dieter Fox
+  publisher: IEEE Robotics and Automation Letters
+  date: '2022-04-01'
+  link: https://doi.org/gs37gt
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=AL4FPs84YdQ
+  title: Semantic Terrain Classification for Off-Road Autonomous Driving
+  authors:
+  - Amirreza Shaban
+  - Xiangyun Meng
+  - JoonHo Lee
+  - Byron Boots
+  - Dieter Fox
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=AL4FPs84YdQ
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=9uFiX_HRsIL
+  title: 'CLIPort: What and Where Pathways for Robotic Manipulation'
+  authors:
+  - Mohit Shridhar
+  - Lucas Manuelli
+  - Dieter Fox
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=9uFiX_HRsIL
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=mOLu2rODIJF
+  title: 'SORNet: Spatial Object-Centric Representations for Sequential Manipulation'
+  authors:
+  - Wentao Yuan
+  - Chris Paxton
+  - Karthik Desingh
+  - Dieter Fox
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=mOLu2rODIJF
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=5DjX89Wyhk-
+  title: Predicting Stable Configurations for Semantic Placement of Novel Objects
+  authors:
+  - Chris Paxton
+  - Chris Xie
+  - Tucker Hermans
+  - Dieter Fox
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=5DjX89Wyhk-
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=dgQdvPZnH-t
+  title: 'LanguageRefer: Spatial-Language Model for 3D Visual Grounding'
+  authors:
+  - Junha Roh
+  - Karthik Desingh
+  - Ali Farhadi
+  - Dieter Fox
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=dgQdvPZnH-t
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=0f7gUXVAcE9
+  title: 'RICE: Refining Instance Masks in Cluttered Environments with Graph Neural
+    Networks'
+  authors:
+  - Chris Xie
+  - Arsalan Mousavian
+  - Yu Xiang
+  - Dieter Fox
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=0f7gUXVAcE9
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=ceOmpjMhlyS
+  title: 'STORM: An Integrated Framework for Fast Joint-Space Model-Predictive Control
+    for Reactive Manipulation'
+  authors:
+  - Mohak Bhardwaj
+  - Balakumar Sundaralingam
+  - Arsalan Mousavian
+  - Nathan D. Ratliff
+  - Dieter Fox
+  - Fabio Ramos
+  - Byron Boots
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=ceOmpjMhlyS
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=jOSWHddP1fZ
+  title: Goal-Auxiliary Actor-Critic for 6D Robotic Grasping with Point Clouds
+  authors:
+  - Lirui Wang
+  - Yu Xiang
+  - Wei Yang
+  - Arsalan Mousavian
+  - Dieter Fox
+  publisher: ''
+  date: '2021-06-19'
+  link: https://openreview.net/forum?id=jOSWHddP1fZ
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=sciA_xgYofB
+  title: Impossibly Good Experts and How to Follow Them
+  authors:
+  - Aaron Walsman
+  - Muru Zhang
+  - Sanjiban Choudhury
+  - Dieter Fox
+  - Ali Farhadi
+  publisher: ''
+  date: '2022-09-29'
+  link: https://openreview.net/forum?id=sciA_xgYofB
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/IROS51168.2021.9636037
+  title: Reactive Long Horizon Task Execution via Visual Skill and Precondition Models
+  authors:
+  - Shohin Mukherjee
+  - Chris Paxton
+  - Arsalan Mousavian
+  - Adam Fishman
+  - Maxim Likhachev
+  - Dieter Fox
+  publisher: 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems
+    (IROS)
+  date: '2021-09-27'
+  link: https://doi.org/g8754g
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/IROS51168.2021.9636097
+  title: 'Towards Coordinated Robot Motions: End-to-End Learning of Motion Policies
+    on Transform Trees'
+  authors:
+  - M. Asif Rana
+  - Anqi Li
+  - Dieter Fox
+  - Sonia Chernova
+  - Byron Boots
+  - Nathan Ratliff
+  publisher: 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems
+    (IROS)
+  date: '2021-09-27'
+  link: https://doi.org/g8755w
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TASE.2021.3053422
+  title: 'RMP<i>flow</i>: A Geometric Framework for Generation of Multitask Motion
+    Policies'
+  authors:
+  - Ching-An Cheng
+  - Mustafa Mukadam
+  - Jan Issac
+  - Stan Birchfield
+  - Dieter Fox
+  - Byron Boots
+  - Nathan Ratliff
+  publisher: IEEE Transactions on Automation Science and Engineering
+  date: '2021-07-01'
+  link: https://doi.org/g87522
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TRO.2021.3060341
+  title: Unseen Object Instance Segmentation for Robotic Environments
+  authors:
+  - Christopher Xie
+  - Yu Xiang
+  - Arsalan Mousavian
+  - Dieter Fox
+  publisher: IEEE Transactions on Robotics
+  date: '2021-10-01'
+  link: https://doi.org/gmcncq
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TRO.2021.3056043
+  title: "PoseRBPF: A Rao\u2013Blackwellized Particle Filter for 6-D Object Pose Tracking"
+  authors:
+  - Xinke Deng
+  - Arsalan Mousavian
+  - Yu Xiang
+  - Fei Xia
+  - Timothy Bretl
+  - Dieter Fox
+  publisher: IEEE Transactions on Robotics
+  date: '2021-10-01'
+  link: https://doi.org/gm23g6
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/LRA.2021.3060649
+  title: Learning Composable Behavior Embeddings for Long-Horizon Visual Navigation
+  authors:
+  - Xiangyun Meng
+  - Yu Xiang
+  - Dieter Fox
+  publisher: IEEE Robotics and Automation Letters
+  date: '2021-04-01'
+  link: https://doi.org/g8756r
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2104.04631
+  title: 'DexYCB: A Benchmark for Capturing Hand Grasping of Objects'
+  authors:
+  - Yu-Wei Chao
+  - Wei Yang
+  - Yu Xiang
+  - Pavlo Molchanov
+  - Ankur Handa
+  - Jonathan Tremblay
+  - Yashraj S. Narang
+  - Karl Van Wyk
+  - Umar Iqbal
+  - Stan Birchfield
+  - Jan Kautz
+  - Dieter Fox
+  publisher: arXiv
+  date: '2021-01-01'
+  link: https://doi.org/g88q65
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2011.07641
+  title: Stein Variational Model Predictive Control
+  authors:
+  - Alexander Lambert
+  - Adam Fishman
+  - Dieter Fox
+  - Byron Boots
+  - Fabio Ramos
+  publisher: arXiv
+  date: '2020-01-01'
+  link: https://doi.org/g88q66
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2010.14750
+  title: Geometric Fabrics for the Acceleration-based Design of Robotic Motion
+  authors:
+  - Mandy Xie
+  - Karl Van Wyk
+  - Anqi Li
+  - Muhammad Asif Rana
+  - Qian Wan
+  - Dieter Fox
+  - Byron Boots
+  - Nathan Ratliff
+  publisher: arXiv
+  date: '2020-01-01'
+  link: https://doi.org/g88q67
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/IROS45743.2020.9341369
+  title: Collaborative Interaction Models for Optimized Human-Robot Teamwork
+  authors:
+  - Adam Fishman
+  - Chris Paxton
+  - Wei Yang
+  - Dieter Fox
+  - Byron Boots
+  - Nathan Ratliff
+  publisher: 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems
+    (IROS)
+  date: '2020-10-24'
+  link: https://doi.org/g8754h
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA40945.2020.9196935
+  title: 'IRIS: Implicit Reinforcement without Interaction at Scale for Learning Control
+    from Offline Robot Manipulation Data'
+  authors:
+  - Ajay Mandlekar
+  - Fabio Ramos
+  - Byron Boots
+  - Silvio Savarese
+  - Li Fei-Fei
+  - Animesh Garg
+  - Dieter Fox
+  publisher: 2020 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2020-05-01'
+  link: https://doi.org/gss3kp
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA40945.2020.9196644
+  title: Scaling Local Control to Large-Scale Topological Navigation
+  authors:
+  - Xiangyun Meng
+  - Nathan Ratliff
+  - Yu Xiang
+  - Dieter Fox
+  publisher: 2020 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2020-05-01'
+  link: https://doi.org/g875z9
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA40945.2020.9196714
+  title: Self-supervised 6D Object Pose Estimation for Robot Manipulation
+  authors:
+  - Xinke Deng
+  - Yu Xiang
+  - Arsalan Mousavian
+  - Clemens Eppner
+  - Timothy Bretl
+  - Dieter Fox
+  publisher: 2020 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2020-05-01'
+  link: https://doi.org/gjjws8
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.2003.07990
+  title: 'Watching the World Go By: Representation Learning from Unlabeled Videos'
+  authors:
+  - Daniel Gordon
+  - Kiana Ehsani
+  - Dieter Fox
+  - Ali Farhadi
+  publisher: arXiv
+  date: '2020-01-01'
+  link: https://doi.org/g88vq4
+  plugin: sources.py
+  file: sources.yaml
+- id: https://openreview.net/forum?id=PTnGQQNgKn
+  title: Sim-to-Real Task Planning and Execution from Perception via Reactivity and
+    Recovery
+  authors:
+  - Shohin Mukherjee
+  - Chris Paxton
+  - Arsalan Mousavian
+  - Adam Fishman
+  - Maxim Likhachev
+  - Dieter Fox
+  publisher: CoRR
+  date: '2020-01-01'
+  link: https://openreview.net/forum?id=PTnGQQNgKn
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-030-58558-7_43
+  title: 'DeepGMR: Learning Latent Gaussian Mixture Models for Registration'
+  authors:
+  - Wentao Yuan
+  - Benjamin Eckart
+  - Kihwan Kim
+  - Varun Jampani
+  - Dieter Fox
+  - Jan Kautz
+  publisher: Lecture Notes in Computer Science
+  date: '2020-01-01'
+  link: https://doi.org/gmvbpz
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1912.00416
+  title: 'LatentFusion: End-to-End Differentiable Reconstruction and Rendering for
+    Unseen Object Pose Estimation'
+  authors:
+  - Keunhong Park
+  - Arsalan Mousavian
+  - Yu Xiang
+  - Dieter Fox
+  publisher: arXiv
+  date: '2019-01-01'
+  link: https://doi.org/g88vq5
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1912.01734
+  title: 'ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday
+    Tasks'
+  authors:
+  - Mohit Shridhar
+  - Jesse Thomason
+  - Daniel Gordon
+  - Yonatan Bisk
+  - Winson Han
+  - Roozbeh Mottaghi
+  - Luke Zettlemoyer
+  - Dieter Fox
+  publisher: arXiv
+  date: '2019-01-01'
+  link: https://doi.org/g88vq6
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-030-44051-0_26
+  title: 'RMPflow: A Computational Graph for Automatic Motion Policy Generation'
+  authors:
+  - Ching-An Cheng
+  - Mustafa Mukadam
+  - Jan Issac
+  - Stan Birchfield
+  - Dieter Fox
+  - Byron Boots
+  - Nathan Ratliff
+  publisher: Springer Proceedings in Advanced Robotics
+  date: '2020-01-01'
+  link: https://doi.org/grw3ct
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-030-28619-4_14
+  title: Self-directed Lifelong Learning for Robot Vision
+  authors:
+  - Tanner Schmidt
+  - Dieter Fox
+  publisher: Springer Proceedings in Advanced Robotics
+  date: '2019-11-28'
+  link: https://doi.org/g8756h
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1911.10280
+  title: Manipulation Trajectory Optimization with Online Grasp Synthesis and Selection
+  authors:
+  - Lirui Wang
+  - Yu Xiang
+  - Dieter Fox
+  publisher: arXiv
+  date: '2019-01-01'
+  link: https://doi.org/g88vq7
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/IROS40897.2019.8968165
+  title: EARLY FUSION for Goal Directed Robotic Vision
+  authors:
+  - Aaron Walsman
+  - Yonatan Bisk
+  - Saadia Gabriel
+  - Dipendra Misra
+  - Yoav Artzi
+  - Yejin Choi
+  - Dieter Fox
+  publisher: 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems
+    (IROS)
+  date: '2019-11-01'
+  link: https://doi.org/g7dkbr
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1910.13942
+  title: 'Motion-Nets: 6D Tracking of Unknown Objects in Unseen Environments using
+    RGB'
+  authors:
+  - Felix Leeb
+  - Arunkumar Byravan
+  - Dieter Fox
+  publisher: arXiv
+  date: '2019-01-01'
+  link: https://doi.org/g88vq8
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2019.8793656
+  title: Part Segmentation for Highly Accurate Deformable Tracking in Occlusions via
+    Fully Convolutional Neural Networks
+  authors:
+  - Weilin Wan
+  - Aaron Walsman
+  - Dieter Fox
+  publisher: 2019 International Conference on Robotics and Automation (ICRA)
+  date: '2019-05-01'
+  link: https://doi.org/g8756j
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2019.8794223
+  title: Neural Autonomous Navigation with Riemannian Motion Policy
+  authors:
+  - Xiangyun Meng
+  - Nathan Ratliff
+  - Yu Xiang
+  - Dieter Fox
+  publisher: 2019 International Conference on Robotics and Automation (ICRA)
+  date: '2019-05-01'
+  link: https://doi.org/gh7nq2
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2019.8794441
+  title: 'Prospection: Interpretable plans from language by predicting the future'
+  authors:
+  - Chris Paxton
+  - Yonatan Bisk
+  - Jesse Thomason
+  - Arunkumar Byravan
+  - Dieter Foxl
+  publisher: 2019 International Conference on Robotics and Automation (ICRA)
+  date: '2019-05-01'
+  link: https://doi.org/g8752s
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2019.8794048
+  title: Joint Inference of Kinematic and Force Trajectories with Visuo-Tactile Sensing
+  authors:
+  - Alexander Sasha Lambert
+  - Mustafa Mukadam
+  - Balakumar Sundaralingam
+  - Nathan Ratliff
+  - Byron Boots
+  - Dieter Fox
+  publisher: 2019 International Conference on Robotics and Automation (ICRA)
+  date: '2019-05-01'
+  link: https://doi.org/g8753f
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2019.8793502
+  title: Robust Learning of Tactile Force Estimation through Robot Interaction
+  authors:
+  - Balakumar Sundaralingam
+  - Alexander Sasha Lambert
+  - Ankur Handa
+  - Byron Boots
+  - Tucker Hermans
+  - Stan Birchfield
+  - Nathan Ratliff
+  - Dieter Fox
+  publisher: 2019 International Conference on Robotics and Automation (ICRA)
+  date: '2019-05-01'
+  link: https://doi.org/ggzjx2
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1901.01492
+  title: What Should I Do Now? Marrying Reinforcement Learning and Symbolic Planning
+  authors:
+  - Daniel Gordon
+  - Dieter Fox
+  - Ali Farhadi
+  publisher: arXiv
+  date: '2019-01-01'
+  link: https://doi.org/g88vq9
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1809.10790
+  title: Deep Object Pose Estimation for Semantic Robotic Grasping of Household Objects
+  authors:
+  - Jonathan Tremblay
+  - Thang To
+  - Balakumar Sundaralingam
+  - Yu Xiang
+  - Dieter Fox
+  - Stan Birchfield
+  publisher: arXiv
+  date: '2018-01-01'
+  link: https://doi.org/gwdkfv
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2018.8461184
+  title: 'SE3-Pose-Nets: Structured Deep Dynamics Models for Visuomotor Control'
+  authors:
+  - Arunkumar Byravan
+  - Felix Leeb
+  - Franziska Meier
+  - Dieter Fox
+  publisher: 2018 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2018-05-01'
+  link: https://doi.org/ggwcgp
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1177/0278364917734052
+  title: Perceiving and reasoning about liquids using fully convolutional networks
+  authors:
+  - Connor Schenck
+  - Dieter Fox
+  publisher: The International Journal of Robotics Research
+  date: '2017-10-30'
+  link: https://doi.org/gdkm9c
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/LRA.2018.2792152
+  title: 'Re$^3$: Re al-Time Recurrent Regression Networks for Visual Tracking of
+    Generic Objects'
+  authors:
+  - Daniel Gordon
+  - Ali Farhadi
+  - Dieter Fox
+  publisher: IEEE Robotics and Automation Letters
+  date: '2018-04-01'
+  link: https://doi.org/gg3snx
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1804.00175
+  title: 'DeepIM: Deep Iterative Matching for 6D Pose Estimation'
+  authors:
+  - Yi Li
+  - Gu Wang
+  - Xiangyang Ji
+  - Yu Xiang
+  - Dieter Fox
+  publisher: arXiv
+  date: '2018-01-01'
+  link: https://doi.org/g88vrb
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1712.03316
+  title: 'IQA: Visual Question Answering in Interactive Environments'
+  authors:
+  - Daniel Gordon
+  - Aniruddha Kembhavi
+  - Mohammad Rastegari
+  - Joseph Redmon
+  - Dieter Fox
+  - Ali Farhadi
+  publisher: arXiv
+  date: '2017-01-01'
+  link: https://doi.org/g88vrc
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-319-91863-1_9
+  title: RGB-D Based Tracking of Complex Objects
+  authors:
+  - Alejandro Perez-Yus
+  - Luis Puig
+  - Gonzalo Lopez-Nicolas
+  - Jose J. Guerrero
+  - Dieter Fox
+  publisher: Lecture Notes in Computer Science
+  date: '2018-01-01'
+  link: https://doi.org/g8757v
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1711.00199
+  title: 'PoseCNN: A Convolutional Neural Network for 6D Object Pose Estimation in
+    Cluttered Scenes'
+  authors:
+  - Yu Xiang
+  - Tanner Schmidt
+  - Venkatraman Narayanan
+  - Dieter Fox
+  publisher: arXiv
+  date: '2017-01-01'
+  link: https://doi.org/kz5n
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/3DV.2017.00015
+  title: Dynamic High Resolution Deformable Articulated Tracking
+  authors:
+  - Aaron Walsman
+  - Weilin Wan
+  - Tanner Schmidt
+  - Dieter Fox
+  publisher: 2017 International Conference on 3D Vision (3DV)
+  date: '2017-10-01'
+  link: https://doi.org/gtgwpv
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2017.7989307
+  title: Visual closed-loop control for pouring liquids
+  authors:
+  - Connor Schenck
+  - Dieter Fox
+  publisher: 2017 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2017-05-01'
+  link: https://doi.org/g875x4
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2017.7989023
+  title: 'SE3-nets: Learning rigid body motion using deep neural networks'
+  authors:
+  - Arunkumar Byravan
+  - Dieter Fox
+  publisher: 2017 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2017-05-01'
+  link: https://doi.org/gs4rvc
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1703.03098
+  title: 'DA-RNN: Semantic Mapping with Data Associated Recurrent Neural Networks'
+  authors:
+  - Yu Xiang
+  - Dieter Fox
+  publisher: arXiv
+  date: '2017-01-01'
+  link: https://doi.org/g88vrd
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/LRA.2025.3542323
+  title: 'Aim My Robot: Precision Local Navigation to Any Object'
+  authors:
+  - Xiangyun Meng
+  - Xuning Yang
+  - Sanghun Jung
+  - Fabio Ramos
+  - Sri Sadhan Jujjavarapu
+  - Sanjoy Paul
+  - Dieter Fox
+  publisher: IEEE Robotics and Automation Letters
+  date: '2025-04-01'
+  link: https://doi.org/g858zn
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1705.08080
+  title: Visual Semantic Planning using Deep Successor Representations
+  authors:
+  - Yuke Zhu
+  - Daniel Gordon
+  - Eric Kolve
+  - Dieter Fox
+  - Li Fei-Fei
+  - Abhinav Gupta
+  - Roozbeh Mottaghi
+  - Ali Farhadi
+  publisher: arXiv
+  date: '2017-01-01'
+  link: https://doi.org/g88vrg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1701.02718
+  title: 'See the Glass Half Full: Reasoning about Liquid Containers, their Volume
+    and Content'
+  authors:
+  - Roozbeh Mottaghi
+  - Connor Schenck
+  - Dieter Fox
+  - Ali Farhadi
+  publisher: arXiv
+  date: '2017-01-01'
+  link: https://doi.org/g88vrh
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/LRA.2016.2634089
+  title: Self-Supervised Visual Descriptor Learning for Dense Correspondence
+  authors:
+  - Tanner Schmidt
+  - Richard Newcombe
+  - Dieter Fox
+  publisher: IEEE Robotics and Automation Letters
+  date: '2017-04-01'
+  link: https://doi.org/gj6twz
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-319-50115-4_43
+  title: Towards Learning to Perceive and Reason About Liquids
+  authors:
+  - Connor Schenck
+  - Dieter Fox
+  publisher: Springer Proceedings in Advanced Robotics
+  date: '2017-01-01'
+  link: https://doi.org/g87532
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1609/hcomp.v4i1.13286
+  title: Evaluating Task-Dependent Taxonomies for Navigation
+  authors:
+  - Yuyin Sun
+  - Adish Singla
+  - Tori Yan
+  - Andreas Krause
+  - Dieter Fox
+  publisher: Proceedings of the AAAI Conference on Human Computation and Crowdsourcing
+  date: '2016-09-21'
+  link: https://doi.org/g8756s
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1609.03076
+  title: Guided Policy Search with Delayed Sensor Measurements
+  authors:
+  - Connor Schenck
+  - Dieter Fox
+  publisher: arXiv
+  date: '2016-01-01'
+  link: https://doi.org/g88vrj
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1606.06266
+  title: Detection and Tracking of Liquids with Fully Convolutional Networks
+  authors:
+  - Connor Schenck
+  - Dieter Fox
+  publisher: arXiv
+  date: '2016-01-01'
+  link: https://doi.org/g88vrk
+  plugin: sources.py
+  file: sources.yaml
+- url: https://www.researchgate.net/profile/Jim-Mainprice/publication/310844371_Functional_manifold_projections_in_Deep-LEARCH/links/5839f7dc08ae3d91723f64ff/Functional-manifold-projections-in-Deep-LEARCH.pdf
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2016.7487302
+  title: 'NEOL: Toward Never-Ending Object Learning for robots'
+  authors:
+  - ' Yuyin Sun'
+  - Dieter Fox
+  publisher: 2016 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2016-05-01'
+  link: https://doi.org/g8754v
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/s10514-015-9462-z
+  title: 'DART: dense articulated real-time tracking with consumer depth cameras'
+  authors:
+  - Tanner Schmidt
+  - Richard Newcombe
+  - Dieter Fox
+  publisher: Autonomous Robots
+  date: '2015-07-28'
+  link: https://doi.org/f7rkxt
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA.2015.7138989
+  title: Depth-based tracking with physical constraints for robot manipulation
+  authors:
+  - Tanner Schmidt
+  - Katharina Hertkorn
+  - Richard Newcombe
+  - Zoltan Marton
+  - Michael Suppa
+  - Dieter Fox
+  publisher: 2015 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2015-05-01'
+  link: https://doi.org/g875zz
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.48550/arXiv.1504.07302
+  title: Building Hierarchies of Concepts via Crowdsourcing
+  authors:
+  - Yuyin Sun
+  - Adish Singla
+  - Dieter Fox
+  - Andreas Krause
+  publisher: arXiv
+  date: '2015-01-01'
+  link: https://doi.org/g88vrm
   plugin: sources.py
   file: sources.yaml
