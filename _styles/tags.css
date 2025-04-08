@@ -23,7 +23,7 @@
 }
 
 .tag:hover {
-  background: var(--light-gray);
+  filter: brightness(75%);
 }
 
 .tag[data-active] {
