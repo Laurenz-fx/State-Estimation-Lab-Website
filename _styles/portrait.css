@@ -98,11 +98,26 @@
 }
 
 .portrait-links {
-  margin-top: 0.2rem;
+  margin-top: 0.8rem;
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
   flex-wrap: wrap;
+}
+
+.portrait-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.portrait-links a i,
+.portrait-links a svg {
+  font-size: 24px;
 }
 
 .portrait[data-style=tiny] .portrait-role,
