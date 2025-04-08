@@ -36,7 +36,7 @@ $wrap: 800px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.5px;
   max-width: 100%;
   height: min-content;
   padding: 20px;
@@ -80,7 +80,7 @@ $wrap: 800px;
 .citation-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 0.5px;
 }
 
 .citation-buttons .button {
@@ -91,6 +91,7 @@ $wrap: 800px;
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  gap: 0.5px;
 }
 
 @container (max-width: #{$wrap}) {
@@ -109,9 +110,10 @@ $wrap: 800px;
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  gap: 0.5px;
 }
 
 .citation-awards {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
 }
