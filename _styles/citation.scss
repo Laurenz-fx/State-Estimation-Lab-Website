@@ -117,3 +117,27 @@ $wrap: 800px;
   margin-top: 0.5px;
   margin-bottom: 0.5px;
 }
+
+.citation-awards-conferences {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5px;
+  margin-top: 5px;
+}
+
+.award, .conference {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.award:hover, .conference:hover {
+  filter: brightness(85%);
+}

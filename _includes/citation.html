@@ -71,13 +71,14 @@
       {% if citation.awards.size > 0 or citation.conferences.size > 0 %}
         <div class="citation-awards-conferences">
           {% if citation.awards.size > 0 %}
-            {% include awards.html awards=citation.awards repo=citation.repo %}
+            {% include awards.html awards=citation.awards %}
           {% endif %}
           {% if citation.conferences.size > 0 %}
-            {% include conferences.html conferences=citation.conferences repo=citation.repo %}
+            {% include conferences.html conferences=citation.conferences %}
           {% endif %}
         </div>
       {% endif %}
+
 
 
 

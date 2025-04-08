@@ -1,23 +1,12 @@
 {% assign awards = include.awards %}
-{% assign link = include.link | default: page.dir %}
-{% if awards.size > 0 or include.repo %}
-  <div
-    class="awards"
-    {% if include.repo %}
-      data-repo="{{ include.repo | xml_escape }}"
-    {% endif %}
-    {% if link %}
-      data-link="{{ link | relative_url | xml_escape }}"
-    {% endif %}
-  >
-    {% for award in awards %}
-      <a
-        href="https://laurenz-fx.github.io/State-Estimation-Lab-Website/research/?search=+{{ award | downcase | uri_escape }}"
-        class="award"
-        data-tooltip="Search for '{{ award }}'"
-      >
-        {{ award }}
-      </a>
-    {% endfor %}
-  </div>
+{% if awards.size > 0 %}
+  {% for award in awards %}
+    <a
+      href="https://laurenz-fx.github.io/State-Estimation-Lab-Website/research/?search=+{{ award | downcase | uri_escape }}"
+      class="award"
+      data-tooltip="Search for '{{ award }}'"
+    >
+      {{ award }}
+    </a>
+  {% endfor %}
 {% endif %}
