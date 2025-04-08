@@ -1,3 +1,9 @@
+---
+---
+
+$thumb-size: 180px;
+$wrap: 800px;
+
 .citation-container {
   container-type: inline-size;
 }
@@ -13,7 +19,7 @@
 
 .citation-image {
   position: relative;
-  width: 180px;
+  width: $thumb-size;
   flex-shrink: 0;
 }
 
@@ -88,14 +94,14 @@
   gap: 0.5px;
 }
 
-@container (max-width: 800px) {
+@container (max-width: #{$wrap}) {
   .citation {
     flex-direction: column;
   }
 
   .citation-image {
     width: unset;
-    height: 180px;
+    height: $thumb-size;
   }
 }
 
@@ -104,6 +110,7 @@
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  gap: 0.5px;
 }
 
 .citation-awards {
@@ -132,9 +139,5 @@
 }
 
 .award:hover, .conference:hover {
-  background-color: rgba(var(--secondary-rgb), 0.75);
-}
-
-.conference[data-active] {
-  background-color: rgba(var(--secondary-rgb), 0.75);
+  filter: brightness(85%);
 }
