@@ -43,8 +43,11 @@
 .citation-title,
 .citation-authors,
 .citation-awards,
+.citation-awards-conferences,
 .citation-details,
-.citation-description {
+.citation-description,
+.citation-buttons,
+.citation-tags {
   width: 100%;
 }
 
@@ -115,7 +118,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5px;
-  margin-top: 5px;
+  margin: 0;
 }
 
 .award, .conference {
