@@ -16,9 +16,8 @@
   margin: 0;
   padding: 5px 10px;
   border-radius: 999px;
-  background: var(--secondary);
+  background: var(--conferences);
   color: var(--text);
-  font-weight: var(--semi-bold);
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -27,7 +26,7 @@
 }
 
 .conference:hover {
-  background-color: rgba(var(--secondary-rgb), 0.75);
+  filter: brightness(75%);
 }
 
 .conference[data-active] {
