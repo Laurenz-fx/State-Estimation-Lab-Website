@@ -18,25 +18,17 @@ $wrap: 800px;
 }
 
 .citation-image {
-  position: fixed;
   width: $thumb-size;
+  height: $thumb-size;
   flex-shrink: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 10px;
+  overflow: hidden;
 }
 
 .citation-image img {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .citation-text {
@@ -115,17 +107,6 @@ $wrap: 800px;
   gap: 0.5px;
 }
 
-@container (max-width: #{$wrap}) {
-  .citation {
-    flex-direction: column;
-  }
-
-  .citation-image {
-    width: unset;
-    height: $thumb-size;
-  }
-}
-
 .citation-tags {
   width: 100%;
   display: flex;
@@ -165,4 +146,15 @@ $wrap: 800px;
 
 .award:hover, .conference:hover {
   filter: brightness(75%);
+}
+
+@container (max-width: #{$wrap}) {
+  .citation {
+    flex-direction: column;
+  }
+
+  .citation-image {
+    width: unset;
+    height: $thumb-size;
+  }
 }
