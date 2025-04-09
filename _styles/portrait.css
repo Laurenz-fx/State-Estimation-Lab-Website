@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -26,6 +27,7 @@
   width: 175px;
   max-width: 100%;
   text-decoration: none;
+  min-height: 400px; /* NEU: gleiche Höhe für alle Portraits */
 }
 
 .portrait[data-style=small] {
@@ -90,18 +92,19 @@
 
 .portrait-research {
   font-family: var(--body);
-  font-size: 0.75rem;
+  font-size: 0.7rem; /* KLEINER: mehr Buchstaben passen */
   font-style: italic;
-  line-height: 1.1;
+  line-height: 1; /* DICHTER: weniger Zeilenhöhe */
   opacity: 0.8;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   text-align: center;
   word-break: break-word;
+  min-height: 2.2em; /* Fixe Mindesthöhe für Research-Text */
 }
 
 .portrait-links {
-  margin-top: 0.5rem;
+  margin-top: auto; /* NEU: Schiebt die Links ganz nach unten */
   text-align: center;
   transform: translateX(-39px);
 }
