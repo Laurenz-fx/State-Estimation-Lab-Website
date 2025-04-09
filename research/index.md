@@ -7,7 +7,7 @@ nav:
 
 # Research
 
-{ include section.html }
+{% include section.html %}
 
 ## All
 
