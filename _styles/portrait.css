@@ -21,13 +21,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* NEU: verteilt Inhalt schön */
   align-items: center;
   text-align: center;
   margin: 20px 0;
   width: 175px;
   max-width: 100%;
   text-decoration: none;
-  min-height: 400px; /* NEU: gleiche Höhe für alle Portraits */
+  height: 100%; /* NEU: füllt kompletten Platz */
 }
 
 .portrait[data-style=small] {
