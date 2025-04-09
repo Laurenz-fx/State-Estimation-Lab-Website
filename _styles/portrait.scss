@@ -95,19 +95,19 @@
 
 .portrait-research {
   font-family: var(--body);
-  font-size: 0.7rem; /* KLEINER: mehr Buchstaben passen */
+  font-size: 0.7rem;
   font-style: italic;
-  line-height: 1.0; /* DICHTER: weniger Zeilenhöhe */
+  line-height: 1.0;
   opacity: 0.8;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   text-align: center;
   word-break: break-word;
-  min-height: 2.2em; /* Fixe Mindesthöhe für Research-Text */
+  min-height: 2.2em;
 }
 
 .portrait-links {
-  margin-top: auto; /* NEU: Schiebt die Links ganz nach unten */
+  margin-top: o.5rem;
   text-align: center;
   transform: translateX(-39px);
 }
