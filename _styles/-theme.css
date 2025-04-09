@@ -68,17 +68,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4rem !important;
+  font-size: 3rem !important;
   margin-bottom: 0rem !important;
   text-align: center !important;
 }
 
 h2 {
-  font-size: 3rem !important;
+  font-size: 2rem !important;
 }
 
 h3 {
-  font-size: 2rem !important;
+  font-size: 1.75rem !important;
 }
 
 h4 {
