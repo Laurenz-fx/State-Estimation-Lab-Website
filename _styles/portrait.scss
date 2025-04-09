@@ -91,14 +91,15 @@
 }
 
 .portrait-research {
-  font-family: var(--body); // anderer Font
-  font-size: 0.85rem; // kleiner, damit mehr auf eine Zeile passt
-  line-height: 1.2; // dichter, kompakter
-  opacity: 0.8; // leichte Transparenz
+  font-family: var(--body);
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 1.1;
+  opacity: 0.8;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   text-align: center;
-  word-break: break-word; // falls der Text lang ist
+  word-break: break-word;
 }
 
 
