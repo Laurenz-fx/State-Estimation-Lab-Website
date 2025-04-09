@@ -89,11 +89,14 @@
 }
 
 .portrait-research {
+  font-family: var(--body);
+  font-size: 0.85rem;
+  line-height: 1.2;
+  opacity: 0.8;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
-  opacity: 90%;
-  font-size: small;
   text-align: center;
+  word-break: break-word;
 }
 
 .portrait-links {
