@@ -7,8 +7,6 @@ nav:
 
 # Research
 
-<!-- {% include section.html %} -->
-
 ## All
 
 {% include search-box.html %}
