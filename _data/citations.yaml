@@ -1421,6 +1421,7 @@
   publisher: IEEE Robotics and Automation Letters
   date: '2025-04-01'
   link: https://doi.org/g858zn
+  image: images/000000.png
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.1705.08080
