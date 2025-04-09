@@ -18,7 +18,7 @@ $wrap: 800px;
 }
 
 .citation-image {
-  position: relative;
+  position: fixed;
   width: $thumb-size;
   flex-shrink: 0;
   margin-top: 10px;
