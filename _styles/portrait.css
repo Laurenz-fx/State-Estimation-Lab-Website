@@ -1,12 +1,25 @@
+/* ===========================
+   Team Grid
+=========================== */
+.team-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem 2rem 2rem;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
-  align-items: center;
-  padding: 3rem 2rem 2rem 2rem !important;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
 }
 
+/* ===========================
+   Member Card (Portrait)
+=========================== */
 .team-member {
   width: 100%;
   max-width: 250px;
@@ -20,20 +33,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 20px 0;
   width: 175px;
   max-width: 100%;
   text-decoration: none;
   height: 100%;
+  gap: 0.4rem; /* consistent gap between all elements */
 }
 
+/* Small style variant */
 .portrait[data-style=small] {
   width: 100px;
 }
 
+/* Tiny style variant */
 .portrait[data-style=tiny] {
   flex-direction: row;
   gap: 15px;
@@ -41,10 +55,13 @@
   text-align: left;
 }
 
+/* ===========================
+   Top Left Icon
+=========================== */
 .portrait .icon {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,57 +73,76 @@
   transform: translate(14%, 14%);
 }
 
+/* Small style adjustment for icon */
 .portrait[data-style=small] .icon {
   left: -2px;
   top: -2px;
 }
 
+/* Hide icon for tiny style */
 .portrait[data-style=tiny] .icon {
   display: none;
 }
 
+/* ===========================
+   Portrait Image
+=========================== */
 .portrait-image {
   width: 100%;
-  margin-bottom: 16px;
   aspect-ratio: 1/1;
   border-radius: 999px;
   object-fit: cover;
   box-shadow: var(--shadow);
 }
 
+/* Tiny style adjustment for image */
 .portrait[data-style=tiny] .portrait-image {
   width: 50px;
   margin: 0;
 }
 
+/* ===========================
+   Text Information
+=========================== */
 .portrait-name {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
+  margin: 0.2rem 0 0 0;
 }
 
 .portrait-role {
   font-size: small;
-  opacity: 90%;
-  margin-top: 0.2rem;
+  opacity: 0.9;
+  margin: 0.2rem 0 0 0;
 }
 
 .portrait-research {
   font-family: var(--body);
   font-size: 0.7rem;
   font-style: italic;
-  line-height: 1;
   opacity: 0.8;
-  margin-top: 0.2rem;
-  margin-bottom: 0.1rem !important;
   text-align: center;
+  line-height: 1.2;
+  margin: 0.2rem 0 0 0;
   word-break: break-word;
   min-height: 2.2em;
 }
 
+/* Hide role and research for tiny style */
+.portrait[data-style=tiny] .portrait-role,
+.portrait[data-style=tiny] .portrait-research {
+  display: none;
+}
+
+/* ===========================
+   Social Links
+=========================== */
 .portrait-links {
-  margin-top: 0.1rem !important;
-  text-align: center;
-  transform: translateX(-39px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
 }
 
 .portrait-links a {
@@ -115,18 +151,12 @@
   align-items: center;
   width: 32px;
   height: 32px;
-  margin: 0 0.25rem;
   text-decoration: none;
 }
 
 .portrait-links a i,
 .portrait-links a svg {
   font-size: 18px;
-}
-
-.portrait[data-style=tiny] .portrait-role,
-.portrait[data-style=tiny] .portrait-research {
-  display: none;
 }
 
 /*# sourceMappingURL=portrait.css.map */
