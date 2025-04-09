@@ -162,8 +162,10 @@ img.full-background {
 .highlights-row {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .feature-wrapper {
@@ -176,7 +178,8 @@ img.full-background {
 
 .feature-wrapper img {
   width: 100%;
-  max-width: 250px;
+  height: auto;
+  max-width: 400px;
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: var(--rounded);
