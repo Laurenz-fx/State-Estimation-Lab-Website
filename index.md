@@ -7,9 +7,6 @@ The RSE-Lab was established in 2001. We are interested in the development of com
 
 {% include section.html %}
 
-## Highlights
-
-
 <div class="highlights-row">
 
   <div class="feature-wrapper">
