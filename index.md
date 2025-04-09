@@ -9,23 +9,20 @@ The RSE-Lab was established in 2001. We are interested in the development of com
 
 ## Highlights
 
-<section class="highlights">
-  <h2>Highlights</h2>
-
-  <div class="highlights-row">
-    <div class="feature-wrapper">
-      <a href="research">
-        <img src="images/fallback.png" alt="Our Research">
-        <h3>Our Research</h3>
-      </a>
-    </div>
-
-    <div class="feature-wrapper">
-      <a href="team">
-        <img src="images/team.png" alt="Our Team">
-        <h3>Our Team</h3>
-      </a>
-    </div>
+<div class="highlights-row">
+  <h3>Our Research</h3>
+  <div class="feature-wrapper">
+    <a href="research">
+      <img src="images/fallback.png" alt="Our Research">
+    </a>
   </div>
-</section>
+
+  <div class="feature-wrapper">
+    <h3>Our Team</h3>
+    <a href="team">
+      <img src="images/team.png" alt="Our Team">
+    </a>
+  </div>
+</div>
+
 
