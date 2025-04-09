@@ -1,3 +1,4 @@
+@charset "UTF-8";
 [data-dark=false] {
   --primary: #4b2e83ff;
   --secondary: #d664beff;
@@ -139,9 +140,10 @@ img.full-background {
 
 .highlights-row {
   display: flex;
-  gap: 40px;
   justify-content: center;
+  gap: 60px;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .feature-wrapper {
@@ -149,7 +151,20 @@ img.full-background {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 400px;
+  max-width: 300px; /* <-- Maximalbreite für jede Kachel */
+}
+
+.feature-wrapper h3 {
+  font-size: 1.25rem; /* Kleineres h3 */
+  margin-bottom: 10px; /* Weniger Abstand nach unten */
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* <-- Bild maximal groß machen */
+  border-radius: var(--rounded); /* Abrundung bleibt */
+  box-shadow: var(--shadow); /* Schatten bleibt */
 }
 
 /*# sourceMappingURL=-theme.css.map */
