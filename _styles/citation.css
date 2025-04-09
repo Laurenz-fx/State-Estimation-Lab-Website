@@ -12,7 +12,7 @@
 }
 
 .citation-image {
-  position: relative;
+  position: fixed;
   width: 180px;
   flex-shrink: 0;
   margin-top: 10px;
