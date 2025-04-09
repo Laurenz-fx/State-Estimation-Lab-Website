@@ -1,6 +1,6 @@
 ---
 name: Marius Memmel
-last_name: memmel
+lastname: memmel
 image: images/team/marius-memmel.jpg
 role: PhD Student
 research: Robot Learning, Representation Learning, Computer Vision

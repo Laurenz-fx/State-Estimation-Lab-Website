@@ -1,6 +1,6 @@
 ---
 name: Ge Yan
-last_name: yan
+lastname: yan
 image: images/team/ge-yan.jpg
 role: PhD Student
 research: Robotics and Embodied AI

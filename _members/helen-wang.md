@@ -1,6 +1,6 @@
 ---
 name: Helen Wang
-last_name: wang
+lastname: wang
 image: images/team/helen-wang.jpg
 role: PhD Student
 research: Robotics, Computer Vision, Representation Learning

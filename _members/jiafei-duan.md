@@ -1,6 +1,6 @@
 ---
 name: Jiafei Duan
-last_name: duan
+lastname: duan
 image: images/team/jiafei-duan.jpg
 role: PhD Student
 research: Embodied AI, Computer Vison, Robotics
