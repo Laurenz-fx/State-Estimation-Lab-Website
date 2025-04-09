@@ -18,6 +18,9 @@ $wrap: 800px;
 }
 
 .citation-image {
+  display: flex; // NEU: macht das Bild-Container flexbox
+  align-items: center; // vertikal zentrieren
+  justify-content: center; // horizontal zentrieren
   width: $thumb-size;
   height: $thumb-size;
   flex-shrink: 0;
