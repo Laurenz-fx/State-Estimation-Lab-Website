@@ -9,10 +9,6 @@
   tags:
     - behaviour cloning
     - vision language action
-  awards: 
-    - Best Paper
-  conferences:
-    - ICRA 2025
   
 
 - id: doi:10.48550/arXiv.1703.01656
@@ -80,6 +76,8 @@
 - id: doi:10.1109/ICRA46639.2022.9812302
 
 - id: doi:10.1109/LRA.2022.3143311
+  awards:
+    - RA-L 2023 Best Paper Award
 
 - id: doi:10.1109/LRA.2022.3143198
 
@@ -182,6 +180,8 @@
 - id: doi:10.1109/ICRA.2017.7989307
 
 - id: doi:10.1109/ICRA.2017.7989023
+  awards:
+   - "Finalist: ICRA Best Vision Paper Award"
 
 - id: doi:10.48550/arXiv.1703.03098
 
@@ -194,6 +194,8 @@
 - id: doi:10.48550/arXiv.1701.02718
 
 - id: doi:10.1109/LRA.2016.2634089
+  awards:
+  - ICRA Best Vision Paper Award
 
 - id: doi:10.1007/978-3-319-50115-4_43
 
@@ -210,5 +212,15 @@
 - id: doi:10.1007/s10514-015-9462-z
 
 - id: doi:10.1109/ICRA.2015.7138989
+  awards:
+    - "Finalist: ICRA Best Vision Paper Award"
 
 - id: doi:10.48550/arXiv.1504.07302
+
+- id: doi:10.1109/CVPR.2015.7298631
+  awards:
+    - Best Paper Award
+
+- id: doi:10.1109/ICRA.2014.6907298
+  awards:
+    - "Finalist: ICRA Best Vision Paper Award"
