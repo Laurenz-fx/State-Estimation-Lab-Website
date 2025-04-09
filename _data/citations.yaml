@@ -786,14 +786,10 @@
   plugin: sources.py
   file: sources.yaml
 - id: https://openreview.net/forum?id=5DjX89Wyhk-
-  title: Predicting Stable Configurations for Semantic Placement of Novel Objects
-  authors:
-  - Chris Paxton
-  - Chris Xie
-  - Tucker Hermans
-  - Dieter Fox
+  title: ''
+  authors: []
   publisher: ''
-  date: '2021-06-19'
+  date: ''
   link: https://openreview.net/forum?id=5DjX89Wyhk-
   plugin: sources.py
   file: sources.yaml
