@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -22,14 +21,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* NEU: verteilt Inhalt schön */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   margin: 20px 0;
   width: 175px;
   max-width: 100%;
   text-decoration: none;
-  height: 100%; /* NEU: füllt kompletten Platz */
+  height: 100%;
 }
 
 .portrait[data-style=small] {
