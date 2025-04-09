@@ -5,7 +5,7 @@ nav:
   tooltip: About our team
 ---
 
-# Team
+<h1>Team</h1>
 
 {% include section.html %}
 
