@@ -90,8 +90,9 @@
 
 .portrait-research {
   font-family: var(--body);
-  font-size: 0.85rem;
-  line-height: 1.2;
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 1.1;
   opacity: 0.8;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
