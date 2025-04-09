@@ -1,5 +1,6 @@
 ---
 name: Joel Jang
+last_name: jang
 image: images/team/joel-jang.png
 role: PhD Student
 research: Generative AI, Robotics, Foundational Models
