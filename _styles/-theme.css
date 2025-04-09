@@ -3,8 +3,8 @@
   --primary: #4b2e83ff;
   --secondary: #d664beff;
   --text: #050401ff;
-  --background: #fbf9ffff;
-  --background-alt: #e0e0e2ff;
+  --background: #ffffffff;
+  --background-alt: #ffffffff;
   --light-gray: #e0e0e2ff;
   --gray: #6B7280;
   --dark-gray: #374151;
@@ -68,26 +68,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-5xl);
 }
 
 h2 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
 }
 
 h3 {
-  font-size: var(--text-2xl);
+  font-size: var(--text-3xl);
 }
 
 h4 {
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
 }
 
 h5 {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
 }
 
 h6 {
+  font-size: var(--text-lg);
+}
+
+h7 {
   font-size: var(--text-base);
 }
 

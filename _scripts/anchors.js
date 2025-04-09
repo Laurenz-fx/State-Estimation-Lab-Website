@@ -1,6 +1,6 @@
 /*
   creates link next to each heading that links to that section.
-*/
+
 
 {
   const onLoad = () => {
