@@ -7,7 +7,7 @@ nav:
 
 <h1>Research</h1>
 
-{% include section.html %}
+<!-- {% include section.html %} -->
 
 ## All
 
