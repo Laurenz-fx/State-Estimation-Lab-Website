@@ -5,9 +5,9 @@ nav:
   tooltip: About our team
 ---
 
-<h1>Team</h1>
+# Team
 
-{% include section.html %}
+<!--{% include section.html %} -->
 
 <div class="team-grid-wrapper">
   {% include list.html data="members" component="portrait" filter="role == 'faculty'" grid=true %}

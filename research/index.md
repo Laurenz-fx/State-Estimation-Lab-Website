@@ -5,7 +5,7 @@ nav:
   tooltip: Published works
 ---
 
-<h1>Research</h1>
+h1 { Research }
 
 <!-- {% include section.html %} -->
 
