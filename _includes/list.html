@@ -7,9 +7,10 @@
 
 {% assign years = data %}
 
-{% if include.sort %}
+{% if years and include.sort %}
   {% assign years = years | sort: include.sort %}
 {% endif %}
+
 
 
 {% for year in years %}
