@@ -34,7 +34,7 @@ nav:
 ## Undergrad Students
 
 <div class="team-grid-wrapper">
-  {% include list.html data="members" component="portrait" filter="role == 'undergrad'" grid=true %}
+  {% include list.html data="members" component="portrait" filter="role == 'Undergrad'" grid=true %}
 </div>
 
 ## Alumni
