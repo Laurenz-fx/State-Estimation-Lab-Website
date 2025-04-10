@@ -7,7 +7,6 @@
 
 {% assign items = data %}
 
-
 {% if include.data == "members" %}
   {% assign faculty = items | where: "role", "faculty" %}
   {% assign students = items | where_exp: "item", "item.role != 'faculty'" | sort: "lastname" %}
@@ -16,12 +15,28 @@
   {% assign items = items | sort: include.sort | reverse %}
 {% endif %}
 
+{% assign last_year = "" %}
+
 {% if include.grid %}
   <div class="team-grid">
 {% endif %}
 
 {% for d in items %}
   {% assign style = d.style | default: include.style %}
+
+  {%- if d.date -%}
+    {% assign current_year = d.date | date: "%Y" %}
+    {% if current_year != last_year %}
+      {% unless forloop.first %}
+        {% if include.grid %}
+          </div>
+          <div class="team-grid">
+        {% endif %}
+      {% endunless %}
+      ## {{ current_year }}
+      {% assign last_year = current_year %}
+    {% endif %}
+  {% endif %}
 
   {% include {{ include.component | append: ".html" }}
     affiliation=d.affiliation

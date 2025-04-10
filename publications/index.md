@@ -7,19 +7,10 @@ nav:
 
 # Publications
 
+## All
+
 {% include search-box.html %}
+
 {% include search-info.html %}
 
-{% assign publications = site.data.citations | sort: "date" | reverse %}
-{% assign last_year = "" %}
-
-{% for pub in publications %}
-  {% assign pub_year = pub.date | date: "%Y" %}
-  
-  {% if pub_year != last_year %}
-  ## {{ pub_year }}
-  {% assign last_year = pub_year %}
-  {% endif %}
-
-  {% include citation.html d=pub style="rich" %}
-{% endfor %}
+{% include list.html data="citations" component="citation" style="rich" sort="date" %}
