@@ -19,6 +19,19 @@ nav:
 
 <hr class="team-divider">
 
+## Undergrad Students
+
 <div class="team-grid-wrapper">
   {% include list.html data="members" component="portrait" filter="role == 'undergrad'" grid=true %}
 </div>
+
+<hr class="team-divider">
+
+## Alumni
+
+<ul class="alumni-list">
+  {% for alumni in site.data.alumni %}
+    <li>{{ alumni.name }}</li>
+  {% endfor %}
+</ul>
+
