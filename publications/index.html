@@ -5,7 +5,7 @@ nav:
   tooltip: Published works
 ---
 
-# Publications
+<h1>Publications</h1>
 
 {% include search-box.html %}
 {% include search-info.html %}
@@ -16,7 +16,7 @@ nav:
 {% for citation in sorted_citations %}
   {% assign year = citation.date | slice: 0, 4 %}
   {% if year != current_year %}
-    {{ "<h2>" | append: year | append: "</h2>" }}
+    <h2 id="{{ year }}">{{ year }}</h2>
     {% assign current_year = year %}
   {% endif %}
   
