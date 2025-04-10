@@ -16,8 +16,8 @@ nav:
 {% for citation in sorted_citations %}
   {% assign year = citation.date | slice: 0, 4 %}
   {% if year != current_year %}
-  ## {{ year }}
-  {% assign current_year = year %}
+    <h2>{{ year }}</h2> <!-- <<< richtige HTML-Überschrift -->
+    {% assign current_year = year %}
   {% endif %}
   
   {% include citation.html item=citation style="rich" %}
