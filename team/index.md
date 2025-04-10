@@ -12,7 +12,19 @@ nav:
 ## Faculty and Phd Students
 
 <div class="team-grid-wrapper">
-  {% include list.html data="members" component="portrait" filter="role != 'undergrad'" sort="lastname" grid=true %}
+  {% assign faculty = site.members | where: "role", "Faculty" %}
+  {% assign students = site.members | where_exp: "item", "item.role != 'Faculty' and item.role != 'undergrad' and item.role != 'alumni'" | sort: "lastname" %}
+  {% assign team = faculty | concat: students %}
+
+  {% for member in team %}
+    {% include portrait.html 
+      name=member.name
+      role=member.role
+      image=member.image
+      research=member.research
+      links=member.links
+    %}
+  {% endfor %}
 </div>
 
 ## Undergrad Students
