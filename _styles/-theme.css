@@ -198,4 +198,12 @@ img.full-background {
   margin-top: 0.5rem;
 }
 
+.team-divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 3rem auto 0 auto;
+  width: 80%;
+}
+
 /*# sourceMappingURL=-theme.css.map */
