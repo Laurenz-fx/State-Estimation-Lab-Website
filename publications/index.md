@@ -7,10 +7,18 @@ nav:
 
 # Publications
 
-## All
-
 {% include search-box.html %}
-
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" sort="date" %}
+{% assign sorted_citations = site.data.citations | sort: "date" | reverse %}
+{% assign current_year = "" %}
+
+{% for citation in sorted_citations %}
+  {% assign year = citation.date | slice: 0, 4 %}
+  {% if year != current_year %}
+  ## {{ year }}
+  {% assign current_year = year %}
+  {% endif %}
+  
+  {% include citation.html item=citation style="rich" %}
+{% endfor %}
