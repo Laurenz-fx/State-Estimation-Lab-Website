@@ -7,8 +7,6 @@ nav:
 
 # Publications
 
-{% include section.html %}
-
 ## All
 
 {% include search-box.html %}

@@ -7,7 +7,6 @@ nav:
 
 # Team
 
-{% include section.html %}
 
 ## Faculty and Phd Students
 
