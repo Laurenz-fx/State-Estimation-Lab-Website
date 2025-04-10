@@ -9,17 +9,17 @@ nav:
 
 {% include section.html %}
 
+## Faculty and Phd Students
+
 <div class="team-grid-wrapper">
   {% include list.html data="members" component="portrait" filter="role != 'undergrad'" sort="lastname" grid=true %}
 </div>
-
 
 ## Undergrad Students
 
 <div class="team-grid-wrapper">
   {% include list.html data="members" component="portrait" filter="role == 'undergrad'" grid=true %}
 </div>
-
 
 ## Alumni
 
