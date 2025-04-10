@@ -12,20 +12,25 @@ nav:
 ## Faculty and Phd Students
 
 <div class="team-grid-wrapper">
-  {% assign faculty = site.members | where: "role", "Faculty" %}
-  {% assign students = site.members | where_exp: "item", "item.role != 'Faculty' and item.role != 'undergrad' and item.role != 'alumni'" | sort: "lastname" %}
-  {% assign team = faculty | concat: students %}
+  <div class="team-grid">
 
-  {% for member in team %}
-    {% include portrait.html 
-      name=member.name
-      role=member.role
-      image=member.image
-      research=member.research
-      links=member.links
-    %}
-  {% endfor %}
+    {% assign faculty = site.members | where: "role", "Faculty" %}
+    {% assign students = site.members | where_exp: "item", "item.role != 'Faculty' and item.role != 'undergrad' and item.role != 'alumni'" | sort: "lastname" %}
+    {% assign team = faculty | concat: students %}
+
+    {% for member in team %}
+      {% include portrait.html 
+        name=member.name
+        role=member.role
+        image=member.image
+        research=member.research
+        links=member.links
+      %}
+    {% endfor %}
+
+  </div>
 </div>
+
 
 ## Undergrad Students
 
