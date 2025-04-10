@@ -14,6 +14,12 @@
 - id: doi:10.48550/arXiv.1703.01656
 
 - id: doi:10.48550/arXiv.2501.18564
+  type: paper
+  image: images/Sam2Act_Thumbnail.png
+  buttons:
+    - type: website
+      text: Project Page
+      link: https://sam2act.github.io/
 
 - id: doi:10.48550/arXiv.2411.19309
 
