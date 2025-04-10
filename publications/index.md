@@ -16,15 +16,10 @@ nav:
 {% for year in publications_by_year %}
   ## {{ year.name }}
 
-  {% assign year_filter = "date contains '" | append: year.name | append: "'" %}
-
-  {% include list.html 
-    data="citations" 
-    component="citation" 
-    style="rich" 
-    filter=year_filter 
-    sort="date" 
-    sort_order="desc" 
-  %}
+  <div class="citation-year-group">
+    {% for pub in year.items %}
+      {% include citation.html d=pub style="rich" %}
+    {% endfor %}
+  </div>
 
 {% endfor %}
