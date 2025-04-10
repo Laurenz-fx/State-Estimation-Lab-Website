@@ -1,5 +1,4 @@
 - id: doi:10.48550/arXiv.2502.05485
-  type: paper
   description: This work proposes a hierarchical vision-language-action (VLA) model that improves robot generalization by using off-domain data (like videos or simulations). Instead of predicting actions directly, a high-level model generates a 2D path, which guides a low-level controller. This approach leads to better transfer across domains and improves real-robot performance by 20% on average.
   image: images/HAMSTER_Thumbnail.png
   buttons:
@@ -14,7 +13,6 @@
 - id: doi:10.48550/arXiv.1703.01656
 
 - id: doi:10.48550/arXiv.2501.18564
-  type: paper
   image: images/Sam2Act_Thumbnail.png
   buttons:
     - type: website
