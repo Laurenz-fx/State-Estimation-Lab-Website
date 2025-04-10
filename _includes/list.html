@@ -12,8 +12,8 @@
   {% assign faculty = items | where: "role", "faculty" %}
   {% assign students = items | where_exp: "item", "item.role != 'faculty'" | sort: "lastname" %}
   {% assign items = faculty | concat: students %}
-{% elsif include.sort %}
-  {% assign items = items | sort: include.sort %}
+{% elsif items and include.sort %}
+  {% assign items = items | sort: include.sort | reverse %}
 {% endif %}
 
 {% if include.grid %}
