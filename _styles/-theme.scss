@@ -73,10 +73,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 
-h1 { font-size: 2rem !important; 
-     margin-bottom: 0rem !important; 
-     text-align: center !important; }
-h2 { font-size: 1.75rem !important; }
+/* angepasst: h1 und h2 gleichmäßiger Abstand */
+h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 h3 { font-size: 1.5rem !important; }
 h4 { font-size: 1.25rem !important; }
 h5 { font-size: 1.1rem !important; }
@@ -175,7 +186,7 @@ img.full-background {
   object-fit: cover;
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
-  transition: transform 0.3s ease;
+  transition: transform var(--transition);
 }
 
 .feature-wrapper img:hover {
