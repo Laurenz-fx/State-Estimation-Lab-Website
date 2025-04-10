@@ -260,6 +260,12 @@
   publisher: arXiv
   date: '2025-01-01'
   link: https://doi.org/g88mbq
+  type: paper
+  image: images/Sam2Act_Thumbnail.png
+  buttons:
+  - type: website
+    text: Project Page
+    link: https://sam2act.github.io/
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2411.19309
