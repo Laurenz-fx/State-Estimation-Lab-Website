@@ -5,7 +5,7 @@ nav:
   tooltip: Published works
 ---
 
-# Our Publications
+# Publications
 
 {% include section.html %}
 
