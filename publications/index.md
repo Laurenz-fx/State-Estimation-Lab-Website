@@ -11,17 +11,15 @@ nav:
 {% include search-info.html %}
 
 {% assign publications = site.data.citations | sort: "date" | reverse %}
-{% assign publications_by_year = publications | group_by_exp: "pub", "pub.date | date: '%Y'" %}
+{% assign last_year = "" %}
 
-{% for year in publications_by_year %}
-  ## {{ year.name }}
+{% for pub in publications %}
+  {% assign pub_year = pub.date | date: "%Y" %}
+  
+  {% if pub_year != last_year %}
+  ## {{ pub_year }}
+  {% assign last_year = pub_year %}
+  {% endif %}
 
-  {% include list.html
-    data=year.items
-    component="citation"
-    style="rich"
-    sort="date"
-    sort_order="desc"
-    grid=false
-  %}
+  {% include citation.html d=pub style="rich" %}
 {% endfor %}
