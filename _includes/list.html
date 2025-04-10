@@ -7,7 +7,12 @@
 
 {% assign items = data %}
 
-{% if items and include.sort %}
+/* Special handling for team members */
+{% if include.data == "members" %}
+  {% assign faculty = items | where: "role", "faculty" %}
+  {% assign students = items | where_exp: "item", "item.role != 'faculty'" | sort: "lastname" %}
+  {% assign items = faculty | concat: students %}
+{% elsif include.sort %}
   {% assign items = items | sort: include.sort %}
 {% endif %}
 
