@@ -206,4 +206,16 @@ img.full-background {
   width: 80%;
 }
 
+.alumni-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.alumni-list li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=-theme.css.map */
