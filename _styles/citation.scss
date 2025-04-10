@@ -19,9 +19,9 @@ $wrap: 800px;
 }
 
 .citation-image {
-  display: flex; // NEU: macht das Bild-Container flexbox
-  align-items: center; // vertikal zentrieren
-  justify-content: center; // horizontal zentrieren
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: $thumb-size;
   height: $thumb-size;
   flex-shrink: 0;
@@ -30,8 +30,8 @@ $wrap: 800px;
 }
 
 .citation-image img {
-  width: 100%;
-  height: 100%;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 

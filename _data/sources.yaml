@@ -4,7 +4,7 @@
   image: images/HAMSTER_Thumbnail.png
   buttons:
     - type: website
-      text: Website
+      text: Project Page
       link: https://hamster-robot.github.io/#
   tags:
     - behaviour cloning
