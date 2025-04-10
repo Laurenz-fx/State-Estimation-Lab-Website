@@ -16,10 +16,12 @@ nav:
 {% for year in publications_by_year %}
   ## {{ year.name }}
 
-  <div class="citation-year-group">
-    {% for pub in year.items %}
-      {% include citation.html d=pub style="rich" %}
-    {% endfor %}
-  </div>
-
+  {% include list.html
+    data=year.items
+    component="citation"
+    style="rich"
+    sort="date"
+    sort_order="desc"
+    grid=false
+  %}
 {% endfor %}
