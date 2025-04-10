@@ -33,14 +33,15 @@
           <div class="team-grid">
         {% endif %}
       {% endunless %}
+
       {% capture year_heading %}
-        <h2 class="pub-year">{{ current_year }}</h2>
+<h2 class="pub-year">{{ current_year }}</h2>
       {% endcapture %}
       {{ year_heading | strip_newlines }}
+
       {% assign last_year = current_year %}
     {% endif %}
   {% endif %}
-
 
   {% include {{ include.component | append: ".html" }}
     affiliation=d.affiliation
