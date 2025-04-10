@@ -8,7 +8,6 @@ nav:
 # Publications
 
 {% include search-box.html %}
-
 {% include search-info.html %}
 
 {% assign publications = site.data.citations | sort: "date" | reverse %}
@@ -19,15 +18,7 @@ nav:
 
   <div class="citation-year-group">
     {% for pub in year.items %}
-      {% include citation.html
-        title=pub.title
-        authors=pub.authors
-        publisher=pub.publisher
-        date=pub.date
-        link=pub.link
-        image=pub.image
-        description=pub.description
-      %}
+      {% include citation.html d=pub style="rich" %}
     {% endfor %}
   </div>
 
