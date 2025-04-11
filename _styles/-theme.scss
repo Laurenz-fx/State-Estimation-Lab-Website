@@ -144,8 +144,8 @@ img.full-background {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 300px;
-  max-height: 200px;
+  min-width: 300px;
+  min-height: 200px;
 }
 
 .feature-wrapper h3 {
