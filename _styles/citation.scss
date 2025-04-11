@@ -37,9 +37,12 @@ $wrap: 800px;
   object-fit: contain;
 }
 
-.citation-image img[src*="paper placeholder.png"] {
+.citation-image img[src$="paper placeholder.png"] {
   width: 100px;
   height: 100px;
+  max-width: unset;
+  max-height: unset;
+  object-fit: contain;
 }
 
 .citation-text {
