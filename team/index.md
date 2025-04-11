@@ -14,7 +14,7 @@ nav:
   <div class="team-grid">
 
     {% assign faculty = site.members | where: "role", "Faculty" %}
-    {% assign students = site.members | where_exp: "item", "item.role != 'Faculty' and item.role != 'undergrad' and item.role != 'alumni'" | sort: "lastname" %}
+    {% assign students = site.members | where_exp: "item", "item.role != 'Faculty' and item.role != 'Undergrad' and item.role != 'alumni'" | sort: "lastname" %}
     {% assign team = faculty | concat: students %}
 
     {% for member in team %}
