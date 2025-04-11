@@ -149,6 +149,7 @@ img.full-background {
   align-items: center;
   text-align: center;
   max-width: 300px;
+  max-height: 200px;
 }
 
 .feature-wrapper h3 {
@@ -224,11 +225,12 @@ img.full-background {
 .hero-image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 1000px;
   aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
+  margin: 0 auto;
 }
 
 .hero-image-wrapper img {
