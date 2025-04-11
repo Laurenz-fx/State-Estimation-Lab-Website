@@ -149,20 +149,20 @@ img.full-background {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 300px; /* <-- Maximalbreite für jede Kachel */
+  max-width: 300px;
 }
 
 .feature-wrapper h3 {
-  font-size: 1.25rem; /* Kleineres h3 */
-  margin-bottom: 10px; /* Weniger Abstand nach unten */
+  font-size: 1.25rem;
+  margin-bottom: 10px;
 }
 
 .feature img {
   width: 100%;
   height: auto;
-  max-width: 300px; /* <-- Bild maximal groß machen */
-  border-radius: var(--rounded); /* Abrundung bleibt */
-  box-shadow: var(--shadow); /* Schatten bleibt */
+  max-width: 300px;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
 }
 
 .highlights-row {
@@ -223,12 +223,13 @@ img.full-background {
 }
 
 .hero-wrapper {
-  max-width: 900px; /* Etwas breiter als normale Features */
+  max-width: 900px; /* etwas breiter für Hero */
 }
 
 .hero-wrapper img {
   width: 100%;
   height: auto;
+  max-width: 900px;
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: var(--rounded);
@@ -236,7 +237,7 @@ img.full-background {
 }
 
 .hero-wrapper h3 {
-  font-size: 2rem; /* Größere Überschrift fürs Hero */
+  font-size: 2rem;
   margin-top: 1rem;
 }
 
