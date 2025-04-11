@@ -231,6 +231,7 @@ img.full-background {
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
   margin: 0 auto;
+  min-height: 80vh;
 }
 
 .hero-image-wrapper img {
