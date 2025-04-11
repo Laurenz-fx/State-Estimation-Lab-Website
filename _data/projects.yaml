@@ -1,7 +1,7 @@
 - title: Sam2Act
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
+  image: images/Sam2Act_Thumbnail.png
+  link: https://sam2act.github.io/static/videos/vid_intro.mp4
   description: Transformer-based manipulation model with spatial memory.
 
 - title: Cool Package
