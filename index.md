@@ -31,5 +31,3 @@
     </a>
   </div>
 </div>
-
-<div style="min-height: 50vh;"></div>
