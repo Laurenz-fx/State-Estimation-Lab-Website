@@ -232,6 +232,7 @@ img.full-background {
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
   margin: 2rem auto;
+  align-content: center;
 }
 
 .hero-image-wrapper img {
