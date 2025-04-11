@@ -223,15 +223,21 @@ img.full-background {
   font-size: 1rem;
 }
 
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .hero-image-wrapper {
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
-  margin: 2rem auto;
 }
 
 .hero-image-wrapper img {
@@ -269,7 +275,7 @@ img.full-background {
 }
 
 .hero-text p {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=-theme.css.map */
