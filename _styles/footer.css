@@ -7,7 +7,7 @@ footer {
   padding: 40px;
   line-height: var(--spacing);
   box-shadow: var(--shadow);
-  max-height: 80px;
+  width: 100%; /* <<< NEU, damit er volle Breite hat */
 }
 
 footer a {
