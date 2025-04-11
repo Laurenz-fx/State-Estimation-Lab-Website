@@ -144,8 +144,7 @@ img.full-background {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-width: 300px;
-  min-height: 200px;
+  max-width: 300px;
 }
 
 .feature-wrapper h3 {
@@ -159,6 +158,8 @@ img.full-background {
   max-width: 300px;
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
+  min-width: 300px;
+  min-height: 250px;
 }
 
 .highlights-row {
@@ -221,13 +222,11 @@ img.full-background {
 .hero-image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  aspect-ratio: 16/9;
+  height: 70vh;
   overflow: hidden;
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
-  margin: 0 auto;
-  min-height: 80vh;
+  margin-bottom: 2rem;
 }
 
 .hero-image-wrapper img {
@@ -236,7 +235,6 @@ img.full-background {
   object-fit: cover;
   display: block;
 }
-
 
 .hero-overlay {
   position: absolute;
@@ -257,14 +255,14 @@ img.full-background {
   text-align: center;
   padding: 1rem;
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .hero-text h3 {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
 }
 
 .hero-text p {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
