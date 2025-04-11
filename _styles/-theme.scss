@@ -217,3 +217,27 @@ img.full-background {
   font-size: 1rem;
 }
 
+.hero-wrapper {
+  max-width: 900px; /* Etwas breiter als normale Features */
+}
+
+.hero-wrapper img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+}
+
+.hero-wrapper h3 {
+  font-size: 2rem; /* Größere Überschrift fürs Hero */
+  margin-top: 1rem;
+}
+
+.hero-wrapper p {
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.6;
+}
