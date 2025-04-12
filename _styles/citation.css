@@ -21,9 +21,10 @@
   flex-shrink: 0;
   margin: 10px;
   overflow: hidden;
+  border-radius: var(--rounded);
 }
 
-.citation-image.normal img {
+.citation-image img {
   width: 100%;
   height: auto;
   max-width: 180px;
@@ -31,7 +32,7 @@
   object-fit: contain;
 }
 
-.citation-image.placeholder img {
+.citation-image img.placeholder-img {
   width: 100px;
   height: 100px;
   object-fit: contain;
