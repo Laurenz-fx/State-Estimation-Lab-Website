@@ -16,8 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 180px;
   flex-shrink: 0;
   margin: 10px;
   overflow: hidden;
@@ -25,15 +23,17 @@
 }
 
 .citation-image img.real-img {
-  width: 100%;
-  height: auto;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
+  border-radius: var(--rounded);
 }
 
 .citation-image img.placeholder-img {
   width: 100px;
   height: 100px;
   object-fit: contain;
+  border-radius: var(--rounded);
 }
 
 .citation-text {
@@ -159,6 +159,14 @@
   .citation-image {
     width: unset;
     height: 180px;
+  }
+  .citation-image img.real-img {
+    width: 100%;
+    height: auto;
+  }
+  .citation-image img.placeholder-img {
+    width: 100px;
+    height: 100px;
   }
 }
 
