@@ -22,14 +22,15 @@ $wrap: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: $thumb-size;
-  height: $thumb-size;
+  width: 180px;
+  height: 180px;
   flex-shrink: 0;
   margin: 10px;
   overflow: hidden;
+  border-radius: var(--rounded);
 }
 
-.citation-image.normal img {
+.citation-image img {
   width: 100%;
   height: auto;
   max-width: 180px;
@@ -37,7 +38,7 @@ $wrap: 800px;
   object-fit: contain;
 }
 
-.citation-image.placeholder img {
+.citation-image img.placeholder-img {
   width: 100px;
   height: 100px;
   object-fit: contain;
