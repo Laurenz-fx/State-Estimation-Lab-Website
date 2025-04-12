@@ -1,8 +1,5 @@
 <div class="citation-image">
-    {% if citation.image %}
-      <img src="{{ citation.image | relative_url }}" alt="{{ citation.title }}">
-    {% else %}
-      <img src="{{ "images/paper_placeholder.png" | relative_url }}" alt="{{ citation.title }}" class="placeholder-img">
-    {% endif %}
+    {% assign img_src = citation.image | default: "images/paper_placeholder.png" %}
+    <img src="{{ img_src | relative_url }}" alt="{{ citation.title }}" class="{% if citation.image %}real-img{% else %}placeholder-img{% endif %}">
   </div>
   
