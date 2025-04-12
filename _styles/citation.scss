@@ -29,7 +29,7 @@ $wrap: 800px;
   overflow: hidden;
 }
 
-.citation-image img {
+.citation-image.normal img {
   width: 100%;
   height: auto;
   max-width: 180px;
@@ -37,11 +37,9 @@ $wrap: 800px;
   object-fit: contain;
 }
 
-.citation-image img[src$="paper placeholder.png"] {
+.citation-image.placeholder img {
   width: 100px;
   height: 100px;
-  max-width: unset;
-  max-height: unset;
   object-fit: contain;
 }
 

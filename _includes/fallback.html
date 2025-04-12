@@ -1,1 +1,6 @@
-onerror="this.src = '{{ "images/paper placeholder.png" | relative_url }}'; this.onerror = null;"
+<div class="citation-image {% if citation.image %} normal {% else %} placeholder {% endif %}">
+    <img src="{{ citation.image | relative_url }}" 
+         alt="{{ citation.title }}" 
+         onerror="this.src='{{ "images/paper_placeholder.png" | relative_url }}'; this.parentElement.classList.add('placeholder'); this.parentElement.classList.remove('normal'); this.onerror=null;">
+  </div>
+  
