@@ -1,15 +1,1 @@
-{% if citation.image %}
-  <img 
-    src="{{ citation.image | relative_url | uri_escape }}" 
-    alt="{{ citation.title | escape }}" 
-    class="portrait-image"
-    loading="lazy"
-  >
-{% else %}
-  <img 
-    src="{{ 'images/paper_placeholder.png' | relative_url }}" 
-    alt="Placeholder" 
-    class="portrait-image"
-    loading="lazy"
-  >
-{% endif %}
+onerror="this.src = '{{ "images/fallback.svg" | relative_url }}'; this.onerror = null;"
