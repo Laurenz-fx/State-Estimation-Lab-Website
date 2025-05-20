@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% if citation.image %}
   <img 
     src="{{ citation.image | relative_url | uri_escape }}" 
@@ -14,10 +13,3 @@
     loading="lazy"
   >
 {% endif %}
-=======
-<div class="citation-image">
-    {% assign img_src = citation.image | default: "images/paper_placeholder.png" %}
-    <img src="{{ img_src | relative_url }}" alt="{{ citation.title }}" class="{% if citation.image and citation.image != 'images/paper_placeholder.png' %}real-img{% else %}placeholder-img{% endif %}">
-  </div>
-  
->>>>>>> parent of ea705d1 (Update fallback.html)
