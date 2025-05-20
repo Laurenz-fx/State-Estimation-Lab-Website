@@ -25,22 +25,13 @@
         {% include icon.html icon=type.icon %}
       {% endif %}
 
-      {% if member.image %}
-        <img
-          src="{{ member.image | relative_url | uri_escape }}"
-          class="portrait-image"
-          alt="{{ member.name | default: "member portrait" | regex_strip }}"
-          loading="lazy"
-          {% include fallback.html %}
-        >
-      {% else %}
-        <img
-          src="/assets/images/default-portrait.png"
-          class="portrait-image"
-          alt="Default member portrait"
-          loading="lazy"
-        >
-      {% endif %}
+      <img
+        src="{{ member.image | default: 'images/force-error.png' | relative_url }}"
+        class="portrait-image"
+        alt="{{ member.name | default: 'member portrait' | regex_strip }}"
+        loading="lazy"
+        onerror="this.src='{{ 'images/paper_placeholder.png' | relative_url }}'; this.onerror=null;"
+      >
 
       {% if member.url %}
       {% endif %}
